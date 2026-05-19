@@ -4,10 +4,17 @@ import { useState } from 'react'
 
 type FormState = 'idle' | 'loading' | 'success' | 'error'
 
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
 function validate(data: FormData): Record<string, string> {
   const errors: Record<string, string> = {}
   if (!data.get('name')) errors.name = 'Name is required'
-  if (!data.get('email')) errors.email = 'Email is required'
+  const email = data.get('email') as string
+  if (!email) {
+    errors.email = 'Email is required'
+  } else if (!EMAIL_RE.test(email)) {
+    errors.email = 'Enter a valid email address'
+  }
   if (!data.get('message')) errors.message = 'Message is required'
   return errors
 }

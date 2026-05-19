@@ -50,6 +50,25 @@ describe('POST /api/contact', () => {
     expect(json.success).toBe(true)
   })
 
+  it('returns 400 on malformed JSON body', async () => {
+    const req = new Request('http://localhost/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: 'not valid json',
+    })
+    const res = await POST(req)
+    expect(res.status).toBe(400)
+  })
+
+  it('returns 200 silently when honeypot field is filled', async () => {
+    const res = await POST(
+      makeRequest({ name: 'Bot', email: 'bot@spam.com', message: 'Buy now!', _hp: 'trap' })
+    )
+    expect(res.status).toBe(200)
+    const json = await res.json()
+    expect(json.success).toBe(true)
+  })
+
   it('returns 500 when Resend reports an error', async () => {
     jest.mocked(Resend).mockImplementationOnce(() => ({
       emails: {
