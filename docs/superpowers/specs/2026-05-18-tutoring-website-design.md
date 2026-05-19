@@ -1,7 +1,7 @@
 # Kushal Jivan Tutoring Website — Design Spec
 
 **Date:** 2026-05-18
-**Stack:** Next.js (statically generated), deployed to Vercel
+**Stack:** Next.js (Vercel serverless), deployed to Vercel
 
 ---
 
@@ -99,7 +99,7 @@ Form submission: Next.js API route (`/api/contact`) sends email via **Resend** (
 ## Technical Architecture
 
 ### Stack
-- **Framework:** Next.js 14+ (App Router, static export)
+- **Framework:** Next.js 14+ (App Router, Vercel serverless — no `output: 'export'` so API routes work)
 - **Styling:** Tailwind CSS
 - **Booking:** Calendly inline embed (script tag)
 - **Contact form:** Next.js API route + Resend
@@ -127,7 +127,7 @@ Form submission: Next.js API route (`/api/contact`) sends email via **Resend** (
 ### Key Behaviors
 - **Smooth scroll:** `scroll-behavior: smooth` on `html`, anchor links on nav buttons
 - **Responsive:** Mobile-first, single-column on small screens
-- **Performance:** Static export (`output: 'export'`), no client-side data fetching
+- **Performance:** Static rendering for all page sections; only `/api/contact` runs as a serverless function
 - **Contact form:** Client-side validation before submit; success/error state shown inline
 
 ---
