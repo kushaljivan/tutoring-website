@@ -4,6 +4,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <span className="text-white font-bold text-lg">Kushal Jivan</span>
         <div className="flex items-center gap-3 md:gap-4">
+          {/* TODO: Replace with Kushal's real phone number */}
           <a
             href="tel:+15551234567"
             className="text-accent text-sm hidden md:block hover:underline"

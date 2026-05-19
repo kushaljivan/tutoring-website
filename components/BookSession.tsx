@@ -25,6 +25,7 @@ export default function BookSession() {
           Book a free 30-minute call to discuss your goals, your current level,
           and how we can work together to get results.
         </p>
+        {/* TODO: Replace with Kushal's real Calendly URL */}
         <div
           className="calendly-inline-widget rounded-2xl overflow-hidden bg-white"
           data-url="https://calendly.com/your-calendly-url/free-consultation"
