@@ -87,7 +87,7 @@ Example testimonials:
 - Message (textarea, required)
 - Submit button
 
-Form submission: Next.js API route (`/api/contact`) sends email via a transactional email service (e.g. Resend or EmailJS). Environment variable `CONTACT_EMAIL` sets the recipient address.
+Form submission: Next.js API route (`/api/contact`) sends email via **Resend** (free tier, simple API). Environment variable `CONTACT_EMAIL` sets the recipient address; `RESEND_API_KEY` holds the API key.
 
 **Footer:**
 - Copyright line
@@ -102,7 +102,7 @@ Form submission: Next.js API route (`/api/contact`) sends email via a transactio
 - **Framework:** Next.js 14+ (App Router, static export)
 - **Styling:** Tailwind CSS
 - **Booking:** Calendly inline embed (script tag)
-- **Contact form:** Next.js API route + Resend (or EmailJS as a simpler alternative)
+- **Contact form:** Next.js API route + Resend
 - **Deployment:** Vercel
 
 ### Project Structure
