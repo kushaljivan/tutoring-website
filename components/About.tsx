@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="bg-navy-light py-24 px-6">
+    <section id="about" className="bg-navy-light py-24 px-6 scroll-mt-16">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div className="flex-shrink-0">
           <div className="w-48 h-48 rounded-full bg-navy-mid flex items-center justify-center text-accent text-6xl font-bold select-none">

@@ -1,6 +1,7 @@
 /**
  * @jest-environment node
  */
+import { Resend } from 'resend'
 import { POST } from '@/app/api/contact/route'
 
 jest.mock('resend', () => ({
@@ -50,12 +51,11 @@ describe('POST /api/contact', () => {
   })
 
   it('returns 500 when Resend reports an error', async () => {
-    const { Resend } = require('resend')
-    ;(Resend as jest.Mock).mockImplementationOnce(() => ({
+    jest.mocked(Resend).mockImplementationOnce(() => ({
       emails: {
         send: jest.fn().mockResolvedValue({ data: null, error: { message: 'API failure' } }),
       },
-    }))
+    } as unknown as Resend))
     const res = await POST(
       makeRequest({ name: 'Jamie', email: 'jamie@example.com', message: 'Hello' })
     )

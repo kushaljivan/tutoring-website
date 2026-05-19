@@ -35,6 +35,7 @@ export default function ContactForm() {
           email: data.get('email'),
           subject: data.get('subject'),
           message: data.get('message'),
+          _hp: data.get('_hp'),
         }),
       })
       setState(res.ok ? 'success' : 'error')
@@ -57,6 +58,10 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-6">
+      {/* Honeypot: visually hidden, bots fill it, real users don't */}
+      <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px' }}>
+        <input name="_hp" type="text" tabIndex={-1} autoComplete="off" />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label

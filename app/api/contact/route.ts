@@ -1,9 +1,26 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
+type ContactBody = {
+  name?: string
+  email?: string
+  subject?: string
+  message?: string
+  _hp?: string
+}
+
 export async function POST(request: Request) {
-  const body = await request.json()
-  const { name, email, subject, message } = body
+  let body: ContactBody
+  try {
+    body = await request.json()
+  } catch {
+    return NextResponse.json({ error: 'Invalid request' }, { status: 400 })
+  }
+
+  const { name, email, subject, message, _hp } = body
+
+  // Honeypot: bots fill hidden fields; real users leave them blank
+  if (_hp) return NextResponse.json({ success: true })
 
   if (!name || !email || !message) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
