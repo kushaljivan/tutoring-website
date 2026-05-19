@@ -1253,7 +1253,7 @@ href="mailto:kushal@example.com"  →  href="mailto:kushal@realdomain.com"
 >kushal@example.com<              →  >kushal@realdomain.com<
 ```
 
-- [ ] **Step 5: Replace the Calendly placeholder URL**
+- [ ] **Step 4: Replace the Calendly placeholder URL**
 
 Before going live, update `components/BookSession.tsx` line:
 ```tsx
@@ -1261,14 +1261,14 @@ data-url="https://calendly.com/your-calendly-url/free-consultation"
 ```
 Replace `your-calendly-url` with Kushal's actual Calendly username (found in Calendly → Event Types → Share).
 
-- [ ] **Step 6: Update the Resend sender address for production**
+- [ ] **Step 5: Update the Resend sender address for production**
 
 The `from` field in `app/api/contact/route.ts` uses `onboarding@resend.dev` which works only for testing. For production, add and verify a custom domain in the Resend dashboard, then update to:
 ```typescript
 from: 'Contact Form <noreply@yourdomain.com>',
 ```
 
-- [ ] **Step 7: Commit**
+- [ ] **Step 6: Commit**
 
 ```bash
 git add .env.local.example .gitignore
