@@ -1,20 +1,4 @@
-'use client'
-
-import { useEffect } from 'react'
-
 export default function BookSession() {
-  useEffect(() => {
-    const script = document.createElement('script')
-    script.src = 'https://assets.calendly.com/assets/external/widget.js'
-    script.async = true
-    document.head.appendChild(script)
-    return () => {
-      if (document.head.contains(script)) {
-        document.head.removeChild(script)
-      }
-    }
-  }, [])
-
   return (
     <section id="book" className="bg-navy py-24 px-6 scroll-mt-16">
       <div className="max-w-4xl mx-auto text-center">
@@ -25,11 +9,15 @@ export default function BookSession() {
           Book a free 30-minute call to discuss your goals, your current level,
           and how we can work together to get results.
         </p>
-        <div
-          className="calendly-inline-widget rounded-2xl overflow-hidden bg-white"
-          data-url="https://calendly.com/kjivan525/30min"
-          style={{ minWidth: '320px', height: '700px' }}
-        />
+        <div className="rounded-2xl overflow-hidden">
+          <iframe
+            src="https://calendly.com/kjivan525/30min?embed_type=Inline&hide_gdpr_banner=1"
+            width="100%"
+            height="700"
+            frameBorder={0}
+            title="Schedule a session with Kushal"
+          />
+        </div>
       </div>
     </section>
   )
