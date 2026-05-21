@@ -15,7 +15,7 @@ export default function BookSession() {
         </p>
         <div
           className="calendly-inline-widget rounded-2xl overflow-hidden"
-          data-url="https://calendly.com/kjivan525/30min?hide_gdpr_banner=1"
+          data-url="https://calendly.com/kjivan525?hide_gdpr_banner=1"
           style={{ minWidth: '320px', height: '700px' }}
         />
         <Script
