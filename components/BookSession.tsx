@@ -1,3 +1,7 @@
+'use client'
+
+import Script from 'next/script'
+
 export default function BookSession() {
   return (
     <section id="book" className="bg-navy py-24 px-6 scroll-mt-16">
@@ -9,15 +13,15 @@ export default function BookSession() {
           Book a free 30-minute call to discuss your goals, your current level,
           and how we can work together to get results.
         </p>
-        <div className="rounded-2xl overflow-hidden">
-          <iframe
-            src="https://calendly.com/kjivan525/30min?embed_type=Inline&hide_gdpr_banner=1"
-            width="100%"
-            height="700"
-            frameBorder={0}
-            title="Schedule a session with Kushal"
-          />
-        </div>
+        <div
+          className="calendly-inline-widget rounded-2xl overflow-hidden"
+          data-url="https://calendly.com/kjivan525/30min?hide_gdpr_banner=1"
+          style={{ minWidth: '320px', height: '700px' }}
+        />
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="afterInteractive"
+        />
       </div>
     </section>
   )
