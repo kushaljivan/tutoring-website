@@ -5,12 +5,11 @@ export default function Footer() {
         <p className="text-slate-muted text-sm">
           © {new Date().getFullYear()} Kushal Jivan. All rights reserved.
         </p>
-        {/* TODO: Replace with Kushal's real email address */}
         <a
-          href="mailto:kushal@example.com"
+          href="mailto:kjivan525@gmail.com"
           className="text-accent text-sm hover:underline"
         >
-          kushal@example.com
+          kjivan525@gmail.com
         </a>
       </div>
     </footer>
