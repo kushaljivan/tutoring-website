@@ -11,8 +11,8 @@ export default function Hero() {
           <span className="text-accent">Master the Math.</span>
         </h1>
         <p className="mt-6 text-xl text-slate-text max-w-xl mx-auto leading-relaxed">
-          1-on-1 tutoring with Kushal Jivan — SAT Math, SAT English, and Math
-          from Pre-Algebra through Calculus BC.
+          1-on-1 tutoring with our expert tutors — SAT Math, SAT English, and
+          Math from Pre-Algebra through Calculus BC.
         </p>
         <a
           href="#book"

@@ -8,7 +8,7 @@ export default function ContactSection() {
           Get In Touch
         </h2>
         <p className="text-slate-text text-center mb-10">
-          Have a question? Fill out the form and Kushal will get back to you
+          Have a question? Fill out the form and we'll get back to you
           within 24 hours.
         </p>
         <ContactForm />

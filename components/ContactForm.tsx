@@ -57,7 +57,7 @@ export default function ContactForm() {
         <div className="text-accent text-5xl mb-4">✓</div>
         <h3 className="text-xl font-bold text-white mb-2">Message sent!</h3>
         <p className="text-slate-text">
-          Kushal will get back to you within 24 hours.
+          We'll get back to you within 24 hours.
         </p>
       </div>
     )

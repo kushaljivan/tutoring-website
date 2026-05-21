@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Kushal Jivan — SAT & Math Tutor',
+  title: 'DMV Tutors — SAT & Math Tutoring',
   description:
     '1-on-1 tutoring for SAT Math, SAT English, and Math from Pre-Algebra through Calculus BC. Book a free consultation.',
 }

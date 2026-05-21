@@ -2,7 +2,7 @@ const testimonials = [
   {
     id: 1,
     quote:
-      'Kushal helped me go from a 1180 to a 1430 on the SAT in just 8 weeks. His method is systematic and actually works.',
+      'My tutor helped me go from a 1180 to a 1430 on the SAT in just 8 weeks. The method is systematic and actually works.',
     name: 'Jamie R.',
     role: 'Student',
     result: 'SAT +250 pts',
@@ -10,7 +10,7 @@ const testimonials = [
   {
     id: 2,
     quote:
-      "My daughter was failing Pre-Calc and is now getting A's. Kushal has a gift for making hard concepts click.",
+      "My daughter was failing Pre-Calc and is now getting A's. Our tutor has a gift for making hard concepts click.",
     name: 'Maria T.',
     role: 'Parent',
     result: 'Pre-Calculus',
@@ -18,7 +18,7 @@ const testimonials = [
   {
     id: 3,
     quote:
-      "I got a 5 on the AP Calculus BC exam thanks to Kushal. Couldn't have done it without him.",
+      "I got a 5 on the AP Calculus BC exam thanks to DMV Tutors. Couldn't have done it without them.",
     name: 'Alex K.',
     role: 'Student',
     result: 'AP Calc BC: 5',
