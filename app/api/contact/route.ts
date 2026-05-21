@@ -46,8 +46,7 @@ export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY)
 
   const { error } = await resend.emails.send({
-    // TODO: Replace with a verified domain sender before going live (see Resend dashboard)
-    from: 'Contact Form <onboarding@resend.dev>',
+    from: 'Contact Form <kjivan525@gmail.com>',
     to: contactEmail,
     replyTo: email,
     subject: subject ? `Contact: ${subject}` : `New message from ${name}`,
