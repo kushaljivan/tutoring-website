@@ -18,7 +18,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Top row: brand + CTA */}
         <div className="h-14 flex items-center justify-between">
-          <Link href="/" className="text-white font-bold text-lg shrink-0">
+          <Link href="/" className="text-white font-bold text-xl shrink-0">
             McLean Tutors
           </Link>
           <div className="flex items-center gap-3 md:gap-4">

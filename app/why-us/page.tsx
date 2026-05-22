@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: 'Do you have a minimum number of sessions?',
-    a: 'No contracts, no minimums. Start with a free 30-minute consultation, then book sessions as you need them. Most families do 1–2 sessions per week.',
+    a: 'No contracts, no minimums. Start with a free 30-minute consultation, then book sessions as you need them. Most families do around 3 sessions per week.',
   },
   {
     q: 'Where do sessions take place?',
