@@ -4,7 +4,7 @@ const services = [
     icon: '📐',
     title: 'SAT Math',
     description:
-      'Score improvement strategies, test-taking techniques, and full practice test review. Target: 700+ on the Math section.',
+      'Score improvement strategies, test-taking techniques, and full practice test review. Familiar with the curriculum at Langley and McLean HS. Target: 700+ on the Math section.',
   },
   {
     id: 'sat-english',
@@ -18,7 +18,7 @@ const services = [
     icon: '∫',
     title: 'Math Tutoring',
     description:
-      'Pre-Algebra through Calculus BC — concept mastery, homework help, and exam prep for every level.',
+      'Pre-Algebra through Calculus BC — concept mastery, homework help, and exam prep. We tutor students at Cooper MS, Longfellow MS, Langley HS, and McLean HS.',
   },
 ]
 
@@ -27,7 +27,7 @@ export default function Services() {
     <section id="services" className="bg-navy py-24 px-6 scroll-mt-16">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-white text-center mb-12">
-          What I Teach
+          What We Teach
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service) => (

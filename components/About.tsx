@@ -5,14 +5,24 @@ export default function About() {
     <section id="about" className="bg-navy-light py-24 px-6 scroll-mt-16">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div className="flex-shrink-0">
-          <Image src="/logo.png" alt="McLean Tutors" width={192} height={192} className="rounded-full" />
+          <Image
+            src="/tutor-about.jpg"
+            alt="McLean Tutors — one-on-one session"
+            width={220}
+            height={220}
+            className="rounded-full object-cover w-48 h-48 md:w-56 md:h-56"
+          />
         </div>
         <div>
           <h2 className="text-3xl font-bold text-white mb-4">About Our Tutors</h2>
-          <p className="text-slate-text text-lg leading-relaxed mb-8">
+          <p className="text-slate-text text-lg leading-relaxed mb-4">
             McLean Tutors provides dedicated SAT and math tutoring with over 5 years
-            of experience helping students reach their academic potential. With a
-            strong foundation in mathematics and a proven teaching framework,
+            of experience helping students reach their academic potential. We work
+            with students at <strong className="text-white">Langley HS, McLean HS,
+            Cooper Middle School</strong>, and schools throughout the DMV.
+          </p>
+          <p className="text-slate-text text-lg leading-relaxed mb-8">
+            With a strong foundation in mathematics and a proven teaching framework,
             our tutors adapt to each student&apos;s unique learning style — turning
             confusion into confidence.
           </p>
