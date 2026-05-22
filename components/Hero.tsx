@@ -26,13 +26,13 @@ export default function Hero() {
             Book Free Consultation
           </a>
           <a
-            href="tel:+15551234567"
+            href="tel:+15714497729"
             className="flex flex-col items-center sm:items-start border border-accent/40 rounded-xl px-6 py-3 hover:border-accent transition-colors"
           >
             <span className="text-accent text-xs font-semibold uppercase tracking-wide">
               Call — 30 min, no charge, no commitment
             </span>
-            <span className="text-white text-xl font-bold">(555) 123-4567</span>
+            <span className="text-white text-xl font-bold">(571) 449-7729</span>
           </a>
         </div>
       </div>

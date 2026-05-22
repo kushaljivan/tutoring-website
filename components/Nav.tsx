@@ -5,13 +5,13 @@ export default function Nav() {
         <span className="text-white font-bold text-lg">McLean Tutors</span>
         <div className="flex items-center gap-3 md:gap-4">
           <a
-            href="tel:+15551234567"
+            href="tel:+15714497729"
             className="hidden md:flex flex-col items-end leading-tight hover:opacity-80 transition-opacity"
           >
             <span className="text-accent text-xs font-semibold uppercase tracking-wide">
               Call now for a FREE 30 min consultation
             </span>
-            <span className="text-white text-sm font-bold">(555) 123-4567</span>
+            <span className="text-white text-sm font-bold">(571) 449-7729</span>
           </a>
           <a
             href="#book"

@@ -11,10 +11,10 @@ export default function Footer() {
           </p>
         </div>
         <a
-          href="mailto:kjivan525@gmail.com"
+          href="mailto:mcleantutors21@gmail.com"
           className="text-accent text-sm hover:underline"
         >
-          kjivan525@gmail.com
+          mcleantutors21@gmail.com
         </a>
       </div>
     </footer>
