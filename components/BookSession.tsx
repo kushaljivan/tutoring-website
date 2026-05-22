@@ -4,7 +4,7 @@ import Script from 'next/script'
 
 export default function BookSession() {
   return (
-    <section id="book" className="bg-navy py-24 px-6 scroll-mt-16">
+    <section id="book" className="bg-navy py-24 px-6 scroll-mt-24">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-white mb-4">
           Schedule Your Free Consultation

@@ -1,4 +1,4 @@
-import Nav from '@/components/Nav'
+import TrustBar from '@/components/TrustBar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Services from '@/components/Services'
@@ -11,7 +11,9 @@ import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <>
-      <Nav />
+      {/* spacer for fixed nav (56px top row + 36px tabs = 92px) */}
+      <div className="h-[92px]" />
+      <TrustBar />
       <main>
         <Hero />
         <About />

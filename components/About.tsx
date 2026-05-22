@@ -2,12 +2,12 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <section id="about" className="bg-navy-light py-24 px-6 scroll-mt-16">
+    <section id="about" className="bg-navy-light py-24 px-6 scroll-mt-24">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div className="flex-shrink-0">
           <Image
-            src="/tutor-about.jpg"
-            alt="McLean Tutors — one-on-one session"
+            src="/logo.png"
+            alt="McLean Tutors"
             width={220}
             height={220}
             className="rounded-full object-cover w-48 h-48 md:w-56 md:h-56"
