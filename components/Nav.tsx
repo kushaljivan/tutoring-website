@@ -1,8 +1,10 @@
+import Image from 'next/image'
+
 export default function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/90 backdrop-blur-sm border-b border-navy-mid">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="text-white font-bold text-lg">DMV Tutors</span>
+        <Image src="/logo.png" alt="McLean Tutors" width={48} height={48} className="rounded-full" />
         <div className="flex items-center gap-3 md:gap-4">
           <a
             href="tel:+15551234567"
