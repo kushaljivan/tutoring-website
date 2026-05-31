@@ -6,9 +6,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'McLean Tutors — SAT & Math Tutoring',
+  title: 'McLean Tutors — Math & English Tutoring, SAT Prep',
   description:
-    '1-on-1 tutoring for SAT Math, SAT English, and Math from Pre-Algebra through Calculus BC. Book a free consultation.',
+    '1-on-1 Math and English tutoring for elementary through high school students in McLean, VA — plus SAT prep. Serving Langley HS, McLean HS, Cooper MS, Longfellow MS, and more. Starting at $45/hr.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

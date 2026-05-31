@@ -9,14 +9,14 @@ export default function Hero() {
           Serving McLean, Tysons, Great Falls &amp; Vienna
         </p>
         <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
-          Ace the SAT.
+          Better Grades.
           <br />
-          <span className="text-accent">Master the Math.</span>
+          <span className="text-accent">Better Scores.</span>
         </h1>
         <p className="mt-6 text-xl text-slate-text max-w-xl mx-auto leading-relaxed">
-          1-on-1 tutoring from students who scored 1550+ — SAT Math, SAT
-          English, and Math from Pre-Algebra through Calculus BC, tailored for
-          students at Langley, McLean HS, and Cooper Middle School.
+          1-on-1 tutoring in Math and English for students from elementary
+          through high school — including SAT prep. We work with students at
+          Langley HS, McLean HS, Cooper MS, and Longfellow MS.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a

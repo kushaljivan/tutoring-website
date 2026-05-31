@@ -16,15 +16,15 @@ export default function About() {
         <div>
           <h2 className="text-3xl font-bold text-white mb-4">About Our Tutors</h2>
           <p className="text-slate-text text-lg leading-relaxed mb-4">
-            McLean Tutors provides dedicated SAT and math tutoring with over 5 years
-            of experience helping students reach their academic potential. We work
+            McLean Tutors provides 1-on-1 Math and English tutoring for students
+            from elementary through high school — including SAT prep. We work
             with students at <strong className="text-white">Langley HS, McLean HS,
-            Cooper Middle School</strong>, and schools throughout the DMV.
+            Cooper MS, and Longfellow MS</strong>, and schools throughout the DMV.
           </p>
           <p className="text-slate-text text-lg leading-relaxed mb-8">
-            With a strong foundation in mathematics and a proven teaching framework,
-            our tutors adapt to each student&apos;s unique learning style — turning
-            confusion into confidence.
+            Our tutors adapt to each student&apos;s unique learning style and grade
+            level — whether it&apos;s building foundational skills in elementary school
+            or pushing for a top SAT score in high school.
           </p>
           <div className="flex flex-wrap gap-10">
             <div>

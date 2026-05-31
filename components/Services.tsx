@@ -7,18 +7,18 @@ const services = [
       'Score improvement strategies, test-taking techniques, and full practice test review. Familiar with the curriculum at Langley and McLean HS. Target: 700+ on the Math section.',
   },
   {
-    id: 'sat-english',
+    id: 'english-tutoring',
     icon: '📖',
-    title: 'SAT English',
+    title: 'English Tutoring',
     description:
-      'Reading comprehension, grammar, evidence-based writing, and pacing strategies. Target: 700+ on the EBRW section.',
+      'Reading comprehension, grammar, essay writing, and vocabulary — for elementary through high school students. Also covers SAT English and EBRW prep.',
   },
   {
     id: 'math-tutoring',
     icon: '∫',
     title: 'Math Tutoring',
     description:
-      'Pre-Algebra through Calculus BC — concept mastery, homework help, and exam prep. We tutor students at Cooper MS, Longfellow MS, Langley HS, and McLean HS.',
+      'Elementary math through Calculus BC — concept mastery, homework help, and exam prep. We tutor students at Cooper MS, Longfellow MS, Langley HS, and McLean HS.',
   },
 ]
 
