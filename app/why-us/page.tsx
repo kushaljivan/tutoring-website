@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: 'Where do sessions take place?',
-    a: 'We tutor in-person throughout McLean, Tysons, Great Falls, and Vienna — at your home, a library, or a coffee shop. Online sessions are also available.',
+    a: 'We tutor in-person throughout McLean, Tysons, Great Falls, and Vienna — at a library, coffee shop, or other public setting. Online sessions are also available.',
   },
   {
     q: 'How much improvement can I expect?',

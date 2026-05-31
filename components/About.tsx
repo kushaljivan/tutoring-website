@@ -32,7 +32,7 @@ export default function About() {
               <div className="text-slate-muted text-sm mt-1">Years Experience</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-accent">100+</div>
+              <div className="text-3xl font-bold text-accent">30+</div>
               <div className="text-slate-muted text-sm mt-1">Students Helped</div>
             </div>
             <div>

@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-navy px-6"
+      className="py-20 flex items-center justify-center bg-navy px-6"
     >
       <div className="text-center max-w-3xl">
         <p className="text-accent text-sm font-semibold uppercase tracking-widest mb-4">
