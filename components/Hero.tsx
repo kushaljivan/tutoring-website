@@ -16,7 +16,8 @@ export default function Hero() {
         <p className="mt-6 text-xl text-slate-text max-w-xl mx-auto leading-relaxed">
           1-on-1 tutoring in Math and English for students from elementary
           through high school — including SAT prep. We work with students at
-          Langley HS, McLean HS, Cooper MS, and Longfellow MS.
+          Langley HS, McLean HS, Cooper MS, Longfellow MS, and elementary
+          schools across Northern Virginia.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
