@@ -1,8 +1,8 @@
 import { DollarIcon, GraduationCapIcon, UsersIcon, MapPinIcon } from '@/components/icons'
 
 const stats = [
-  { Icon: DollarIcon, text: 'Starting at $45/hr' },
-  { Icon: GraduationCapIcon, text: 'Math & English · K-12 · SAT Prep' },
+  { Icon: DollarIcon, text: 'Starting at $50/hr' },
+  { Icon: GraduationCapIcon, text: 'All Subjects · K-12 · SAT Prep' },
   { Icon: UsersIcon, text: '50+ students helped' },
   { Icon: MapPinIcon, text: 'McLean, Tysons, Great Falls & Vienna' },
 ]

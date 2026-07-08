@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import TrustBar from '@/components/TrustBar'
 import BookCTA from '@/components/BookCTA'
 import Footer from '@/components/Footer'
-import { CalculatorIcon, BookOpenIcon, CheckIcon } from '@/components/icons'
+import { CalculatorIcon, BookOpenIcon, FlaskIcon, GlobeIcon, CheckIcon } from '@/components/icons'
 import { RulerIllustration, NotebookIllustration } from '@/components/illustrations'
 
 export const metadata: Metadata = {
-  title: 'Math & English Tutoring | McLean Tutoring Center',
+  title: 'Schoolwork Tutoring | McLean Tutoring Center',
   description:
-    'Math and English tutoring from elementary through high school in McLean, VA. Familiar with Langley HS, McLean HS, Cooper MS, and Longfellow MS curriculum. Starting at $45/hr.',
+    'Tutoring for Math, English, Science, and History from elementary through high school in McLean, VA. Familiar with Langley HS, McLean HS, Cooper MS, and Longfellow MS curriculum. Starting at $50/hr.',
 }
 
 const mathCourses = [
@@ -23,6 +23,20 @@ const englishCourses = [
   { level: 'High School Core', subjects: ['Analytical Writing', 'Literary Analysis', 'Research Papers'] },
   { level: 'AP English', subjects: ['AP Language & Composition', 'AP Literature & Composition'] },
   { level: 'Test Prep', subjects: ['SAT Reading & Writing', 'ACT English', 'College Essays'] },
+]
+
+const scienceCourses = [
+  { level: 'Middle School', subjects: ['Life Science', 'Physical Science', 'Earth Science'] },
+  { level: 'High School Core', subjects: ['Biology', 'Chemistry', 'Physics'] },
+  { level: 'AP & Advanced', subjects: ['AP Biology', 'AP Chemistry', 'AP Physics 1 & C'] },
+  { level: 'Skills & Prep', subjects: ['Lab Reports', 'Exam Review', 'ACT Science'] },
+]
+
+const historyCourses = [
+  { level: 'Middle School', subjects: ['US History I & II', 'Civics & Economics', 'World Geography'] },
+  { level: 'High School Core', subjects: ['World History I & II', 'VA & US History', 'US Government'] },
+  { level: 'AP & Advanced', subjects: ['AP World History', 'AP US History', 'AP Government'] },
+  { level: 'Skills & Prep', subjects: ['DBQ & Essay Writing', 'Document Analysis', 'Exam Review'] },
 ]
 
 const schools = [
@@ -61,17 +75,17 @@ export default function MathPrepPage() {
       <TrustBar />
 
       {/* Hero */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 px-6">
         <div className="max-w-6xl mx-auto flex items-center justify-center gap-8 lg:gap-12">
           <RulerIllustration className="hidden lg:block w-32 h-32 shrink-0" />
           <div className="max-w-4xl text-center">
-          <span className="text-brand text-sm font-semibold uppercase tracking-widest">Math & English Tutoring · McLean, VA</span>
+          <span className="text-brand text-sm font-semibold uppercase tracking-widest">Schoolwork Tutoring · McLean, VA</span>
           <h1 className="font-serif mt-3 text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight">
-            Math & English.<br />
+            Every Subject.<br />
             <span className="text-brand">Every Level, Every School.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-ink-light max-w-2xl mx-auto leading-relaxed">
-            We tutor Math and English for students at{' '}
+            We tutor Math, English, Science, and History for students at{' '}
             <strong className="text-ink">Langley HS, McLean HS, Cooper MS, and Longfellow MS</strong>.
             Our tutors recently took the same classes — we know the curriculum,
             the teachers, and exactly what gets tested.
@@ -80,7 +94,7 @@ export default function MathPrepPage() {
             <a href="/#book" className="bg-brand text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-brand-dark transition-colors">
               Book Free Consultation
             </a>
-            <span className="text-ink-light/70 text-sm">Starting at $45/hr · No commitment</span>
+            <span className="text-ink-light/70 text-sm">Starting at $50/hr · No commitment</span>
           </div>
           </div>
           <NotebookIllustration className="hidden lg:block w-32 h-32 shrink-0" />
@@ -88,13 +102,13 @@ export default function MathPrepPage() {
       </section>
 
       {/* Math Courses */}
-      <section className="bg-cream-dark py-24 px-6">
+      <section className="bg-cream-dark py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 justify-center mb-4">
             <CalculatorIcon className="w-8 h-8 text-brand" />
             <h2 className="font-serif text-3xl font-bold text-ink">Math Tutoring</h2>
           </div>
-          <p className="text-ink-light text-center mb-14 max-w-xl mx-auto">
+          <p className="text-ink-light text-center mb-10 max-w-xl mx-auto">
             From fractions to AP Calculus BC — we cover every math course taught at local schools.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -115,13 +129,13 @@ export default function MathPrepPage() {
       </section>
 
       {/* English Courses */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 justify-center mb-4">
             <BookOpenIcon className="w-8 h-8 text-brand" />
             <h2 className="font-serif text-3xl font-bold text-ink">English Tutoring</h2>
           </div>
-          <p className="text-ink-light text-center mb-14 max-w-xl mx-auto">
+          <p className="text-ink-light text-center mb-10 max-w-xl mx-auto">
             From reading comprehension to college essays — we help students write clearly, read critically, and score higher.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -141,8 +155,62 @@ export default function MathPrepPage() {
         </div>
       </section>
 
+      {/* Science Courses */}
+      <section className="bg-cream-dark py-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-center gap-3 justify-center mb-4">
+            <FlaskIcon className="w-8 h-8 text-brand" />
+            <h2 className="font-serif text-3xl font-bold text-ink">Science Tutoring</h2>
+          </div>
+          <p className="text-ink-light text-center mb-10 max-w-xl mx-auto">
+            From life science to AP Physics — we make tough concepts click and lab reports painless.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {scienceCourses.map((c) => (
+              <div key={c.level} className="bg-card border border-ink/10 shadow-card rounded-2xl p-6">
+                <h3 className="text-brand text-sm font-semibold uppercase tracking-wide mb-4">{c.level}</h3>
+                <ul className="space-y-2">
+                  {c.subjects.map((s) => (
+                    <li key={s} className="text-ink text-sm flex items-center gap-2">
+                      <CheckIcon className="w-3.5 h-3.5 text-brand shrink-0" /> {s}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* History Courses */}
+      <section className="bg-cream py-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-center gap-3 justify-center mb-4">
+            <GlobeIcon className="w-8 h-8 text-brand" />
+            <h2 className="font-serif text-3xl font-bold text-ink">History & Social Studies</h2>
+          </div>
+          <p className="text-ink-light text-center mb-10 max-w-xl mx-auto">
+            From civics to AP US History — we help students master the material and write essays that earn top marks.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {historyCourses.map((c) => (
+              <div key={c.level} className="bg-card border border-ink/10 shadow-card rounded-2xl p-6">
+                <h3 className="text-brand text-sm font-semibold uppercase tracking-wide mb-4">{c.level}</h3>
+                <ul className="space-y-2">
+                  {c.subjects.map((s) => (
+                    <li key={s} className="text-ink text-sm flex items-center gap-2">
+                      <CheckIcon className="w-3.5 h-3.5 text-brand shrink-0" /> {s}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Local schools */}
-      <section className="bg-cream-dark py-20 px-6">
+      <section className="bg-cream-dark py-14 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="font-serif text-3xl font-bold text-ink mb-4">We Know Your School&apos;s Curriculum</h2>
           <p className="text-ink-light text-lg mb-10 max-w-2xl mx-auto">
@@ -160,7 +228,7 @@ export default function MathPrepPage() {
       </section>
 
       {/* How it works */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-ink text-center mb-14">How We Work</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

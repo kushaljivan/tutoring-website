@@ -6,7 +6,7 @@ const schools = [
 
 export default function CollegeAcceptances() {
   return (
-    <section id="results" className="bg-cream-dark py-20 px-6 overflow-hidden">
+    <section id="results" className="bg-cream-dark py-14 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-10">
 

@@ -9,7 +9,7 @@ import { CalculatorIllustration, BookIllustration } from '@/components/illustrat
 export const metadata: Metadata = {
   title: 'SAT Prep | McLean Tutoring Center',
   description:
-    '1-on-1 SAT prep in McLean, VA. Our tutors scored 1550+ and took the SAT in 2024–2025. Starting at $45/hr.',
+    '1-on-1 SAT prep in McLean, VA. Our tutors scored 1550+ and took the SAT in 2024–2025. Starting at $50/hr.',
 }
 
 const steps = [
@@ -64,7 +64,7 @@ export default function SatPrepPage() {
       <TrustBar />
 
       {/* Hero */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 px-6">
         <div className="max-w-6xl mx-auto flex items-center justify-center gap-8 lg:gap-12">
           <CalculatorIllustration className="hidden lg:block w-32 h-32 shrink-0 -rotate-6" />
           <div className="max-w-4xl text-center">
@@ -82,7 +82,7 @@ export default function SatPrepPage() {
             <a href="/#book" className="bg-brand text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-brand-dark transition-colors">
               Book Free Consultation
             </a>
-            <span className="text-ink-light/70 text-sm">Starting at $45/hr · No commitment</span>
+            <span className="text-ink-light/70 text-sm">Starting at $50/hr · No commitment</span>
           </div>
           </div>
           <BookIllustration className="hidden lg:block w-32 h-32 shrink-0 rotate-6" />
@@ -116,7 +116,7 @@ export default function SatPrepPage() {
       </section>
 
       {/* How it works */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-ink text-center mb-14">How It Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -132,7 +132,7 @@ export default function SatPrepPage() {
       </section>
 
       {/* What's covered */}
-      <section className="bg-cream-dark py-24 px-6">
+      <section className="bg-cream-dark py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-ink text-center mb-4">What We Cover</h2>
           <p className="text-ink-light text-center mb-14 max-w-xl mx-auto">

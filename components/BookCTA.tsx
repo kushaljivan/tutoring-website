@@ -1,6 +1,6 @@
 export default function BookCTA() {
   return (
-    <section className="bg-ink py-20 px-6 text-center">
+    <section className="bg-ink py-14 px-6 text-center">
       <h2 className="font-serif text-3xl font-bold text-white mb-3">Ready to Get Started?</h2>
       <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
         Book a free 30-minute consultation — no commitment, no charge. We&apos;ll

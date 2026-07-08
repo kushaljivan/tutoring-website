@@ -136,6 +136,26 @@ export function StarIcon(props: IconProps) {
   )
 }
 
+export function FlaskIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="M10 2v7L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 9V2" />
+      <path d="M8.5 2h7" />
+      <path d="M7 16h10" />
+    </Svg>
+  )
+}
+
+export function GlobeIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <circle cx="12" cy="12" r="10" />
+      <path d="M2 12h20" />
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z" />
+    </Svg>
+  )
+}
+
 export function SchoolIcon(props: IconProps) {
   return (
     <Svg {...props}>

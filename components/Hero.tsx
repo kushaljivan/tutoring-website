@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="py-16 md:py-20 flex items-center justify-center gap-6 lg:gap-12 bg-cream px-6"
+      className="py-10 md:py-14 flex items-center justify-center gap-6 lg:gap-12 bg-cream px-6"
     >
       <BookIllustration className="hidden lg:block w-32 h-32 shrink-0 -rotate-6" />
       <div className="text-center max-w-3xl">
@@ -17,10 +17,10 @@ export default function Hero() {
           <span className="text-brand">Better Scores.</span>
         </h1>
         <p className="mt-6 text-lg md:text-xl text-ink-light max-w-xl mx-auto leading-relaxed">
-          1-on-1 tutoring in Math and English for students from elementary
-          through high school — including SAT prep. We work with students at
-          Langley HS, McLean HS, Cooper MS, Longfellow MS, and elementary
-          schools across Northern Virginia.
+          1-on-1 tutoring in Math, English, Science, and History for students
+          from elementary through high school — plus SAT prep. We work with
+          students at Langley HS, McLean HS, Cooper MS, Longfellow MS, and
+          elementary schools across Northern Virginia.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a

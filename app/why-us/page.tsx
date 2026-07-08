@@ -11,7 +11,7 @@ import { PencilIllustration, EraserIllustration } from '@/components/illustratio
 export const metadata: Metadata = {
   title: 'Why McLean Tutoring Center?',
   description:
-    'Affordable K-12 tutoring in McLean, VA — Math, English, and SAT prep. Our tutors recently took the same classes your student is in. Starting at $45/hr, no contracts.',
+    'Affordable K-12 tutoring in McLean, VA — Math, English, Science, History, and SAT prep. Our tutors recently took the same classes your student is in. Starting at $50/hr, no contracts.',
 }
 
 const differences = [
@@ -28,7 +28,7 @@ const differences = [
   {
     Icon: DollarIcon,
     title: 'Fraction of the Cost',
-    body: "Big tutoring centers charge $150–200+/hr and often assign tutors with no connection to your local schools. We start at $45/hr — same results, a tutor who actually knows your student's curriculum, and zero long-term contracts.",
+    body: "Big tutoring centers charge $150–200+/hr and often assign tutors with no connection to your local schools. We start at $50/hr — same results, a tutor who actually knows your student's curriculum, and zero long-term contracts.",
   },
 ]
 
@@ -93,7 +93,7 @@ export default function WhyUsPage() {
       <TrustBar />
 
       {/* Hero */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 px-6">
         <div className="max-w-6xl mx-auto flex items-center justify-center gap-8 lg:gap-12">
           <PencilIllustration className="hidden lg:block w-32 h-32 shrink-0" />
           <div className="max-w-4xl text-center">
@@ -106,7 +106,7 @@ export default function WhyUsPage() {
             From <strong className="text-ink">elementary school homework</strong> to{' '}
             <strong className="text-ink">AP classes and SAT prep</strong> — we tutor K-12
             students across McLean and Northern Virginia, starting at{' '}
-            <strong className="text-ink">$45/hr</strong> with no contracts.
+            <strong className="text-ink">$50/hr</strong> with no contracts.
           </p>
           </div>
           <EraserIllustration className="hidden lg:block w-32 h-32 shrink-0" />
@@ -114,7 +114,7 @@ export default function WhyUsPage() {
       </section>
 
       {/* Who we help */}
-      <section className="bg-cream-dark py-24 px-6">
+      <section className="bg-cream-dark py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-ink text-center mb-4">Who We Help</h2>
           <p className="text-ink-light text-center mb-14 max-w-xl mx-auto">
@@ -144,7 +144,7 @@ export default function WhyUsPage() {
       </section>
 
       {/* Three differences */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-ink text-center mb-14">The McLean Tutoring Center Difference</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -162,7 +162,7 @@ export default function WhyUsPage() {
       </section>
 
       {/* Comparison table */}
-      <section className="bg-cream-dark py-24 px-6">
+      <section className="bg-cream-dark py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-ink text-center mb-4">How We Stack Up</h2>
           <p className="text-ink-light text-center mb-14 max-w-xl mx-auto">
@@ -192,9 +192,9 @@ export default function WhyUsPage() {
 
               {/* Data rows */}
               {[
-                { label: 'Hourly Rate', vals: ['$150–200+', '$60–100', 'From $45'] },
+                { label: 'Hourly Rate', vals: ['$150–200+', '$60–100', 'From $50'] },
                 { label: 'K-12 coursework', vals: ['Limited', 'varies', 'yes'] },
-                { label: 'Math & English', vals: ['Separate centers', 'varies', 'yes'] },
+                { label: 'All subjects', vals: ['Separate centers', 'varies', 'yes'] },
                 { label: 'Knows local curriculum', vals: ['no', 'varies', 'yes'] },
                 { label: 'Relatable to students', vals: ['no', 'varies', 'yes'] },
                 { label: 'SAT/ACT Prep', vals: ['yes', 'varies', 'yes'] },
@@ -231,14 +231,14 @@ export default function WhyUsPage() {
       </section>
 
       {/* Pricing */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-3xl font-bold text-ink mb-4">Simple, Transparent Pricing</h2>
           <p className="text-ink-light text-lg mb-12 max-w-xl mx-auto">
             No hidden fees, no contracts, no pressure. Pay per session.
           </p>
           <div className="bg-card border border-brand/30 shadow-card rounded-2xl p-10">
-            <div className="text-brand text-6xl font-extrabold">$45</div>
+            <div className="text-brand text-6xl font-extrabold">$50</div>
             <div className="text-ink text-xl font-semibold mt-1">per hour</div>
             <div className="text-ink-light/70 text-sm mt-1">Starting rate · discounts available for packages</div>
             <ul className="mt-8 space-y-3 text-left max-w-xs mx-auto">
@@ -266,7 +266,7 @@ export default function WhyUsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-cream-dark py-24 px-6">
+      <section className="bg-cream-dark py-16 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-ink text-center mb-14">Frequently Asked Questions</h2>
           <div className="space-y-6">

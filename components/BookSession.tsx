@@ -5,7 +5,7 @@ import { PencilIllustration } from '@/components/illustrations'
 
 export default function BookSession() {
   return (
-    <section id="book" className="bg-cream py-24 px-6 scroll-mt-24">
+    <section id="book" className="bg-cream py-16 px-6 scroll-mt-24">
       <div className="max-w-4xl mx-auto text-center">
         <PencilIllustration className="w-16 h-16 mx-auto mb-4" />
         <h2 className="font-serif text-3xl font-bold text-ink mb-4">

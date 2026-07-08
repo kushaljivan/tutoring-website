@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <section id="about" className="bg-cream-dark py-24 px-6 scroll-mt-24">
+    <section id="about" className="bg-cream-dark py-16 px-6 scroll-mt-24">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div className="flex-shrink-0 w-48 h-48 md:w-56 md:h-56">
           <Image
@@ -16,8 +16,9 @@ export default function About() {
         <div>
           <h2 className="font-serif text-3xl font-bold text-ink mb-4">About Our Tutors</h2>
           <p className="text-ink-light text-lg leading-relaxed mb-4">
-            McLean Tutoring Center provides 1-on-1 Math and English tutoring for students
-            from elementary through high school — including SAT prep. We work
+            McLean Tutoring Center provides 1-on-1 tutoring in Math, English,
+            Science, and History for students from elementary through high
+            school — including SAT prep. We work
             with students at <strong className="text-ink">Langley HS, McLean HS,
             Cooper MS, and Longfellow MS</strong>, and schools throughout the DMV.
           </p>

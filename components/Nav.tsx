@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 const tabs = [
   { href: '/', label: 'Home' },
   { href: '/sat-prep', label: 'SAT Prep' },
-  { href: '/math-prep', label: 'Math & English' },
+  { href: '/math-prep', label: 'Schoolwork' },
   { href: '/why-us', label: 'Why Us?' },
 ]
 
@@ -35,7 +35,7 @@ export default function Nav() {
               href="/#book"
               className="bg-brand text-white font-bold text-sm px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors shrink-0"
             >
-              Book Session
+              Get Started
             </a>
           </div>
         </div>

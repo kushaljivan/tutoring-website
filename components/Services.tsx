@@ -1,4 +1,4 @@
-import { CalculatorIcon, BookOpenIcon, RulerIcon } from '@/components/icons'
+import { CalculatorIcon, BookOpenIcon, RulerIcon, FlaskIcon } from '@/components/icons'
 import { CalculatorIllustration } from '@/components/illustrations'
 
 const services = [
@@ -23,17 +23,24 @@ const services = [
     description:
       'Elementary math through Calculus BC — concept mastery, homework help, and exam prep. We tutor students at Cooper MS, Longfellow MS, Langley HS, and McLean HS.',
   },
+  {
+    id: 'science-history',
+    Icon: FlaskIcon,
+    title: 'Science & History',
+    description:
+      'Biology, Chemistry, Physics, US and World History — including AP courses. Concept review, essay and lab report help, and exam prep for every class.',
+  },
 ]
 
 export default function Services() {
   return (
-    <section id="services" className="bg-cream-dark py-24 px-6 scroll-mt-24">
+    <section id="services" className="bg-cream-dark py-16 px-6 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
         <CalculatorIllustration className="w-16 h-16 mx-auto mb-4" />
         <h2 className="font-serif text-3xl font-bold text-ink text-center mb-12">
           What We Teach
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
             <div
               key={service.id}
