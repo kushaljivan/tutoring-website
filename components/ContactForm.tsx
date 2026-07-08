@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { CheckIcon } from '@/components/icons'
 
 type FormState = 'idle' | 'loading' | 'success' | 'error'
 
@@ -54,9 +55,11 @@ export default function ContactForm() {
   if (state === 'success') {
     return (
       <div className="text-center py-12" role="status">
-        <div className="text-accent text-5xl mb-4">✓</div>
-        <h3 className="text-xl font-bold text-white mb-2">Message sent!</h3>
-        <p className="text-slate-text">
+        <div className="mx-auto mb-4 w-14 h-14 rounded-full bg-brand/10 text-brand flex items-center justify-center">
+          <CheckIcon className="w-7 h-7" />
+        </div>
+        <h3 className="text-xl font-bold text-ink mb-2">Message sent!</h3>
+        <p className="text-ink-light">
           We'll get back to you within 12 hours.
         </p>
       </div>
@@ -73,7 +76,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-slate-text mb-2"
+            className="block text-sm font-medium text-ink mb-2"
           >
             Name *
           </label>
@@ -81,17 +84,17 @@ export default function ContactForm() {
             id="name"
             name="name"
             type="text"
-            className="w-full bg-navy-mid border border-navy-mid rounded-lg px-4 py-3 text-white placeholder-slate-muted focus:outline-none focus:border-accent"
+            className="w-full bg-card border border-ink/15 rounded-lg px-4 py-3 text-ink placeholder-ink-light/50 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20"
             placeholder="Your name"
           />
           {errors.name && (
-            <p className="text-red-400 text-sm mt-1">{errors.name}</p>
+            <p className="text-red-600 text-sm mt-1">{errors.name}</p>
           )}
         </div>
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-slate-text mb-2"
+            className="block text-sm font-medium text-ink mb-2"
           >
             Email *
           </label>
@@ -99,18 +102,18 @@ export default function ContactForm() {
             id="email"
             name="email"
             type="email"
-            className="w-full bg-navy-mid border border-navy-mid rounded-lg px-4 py-3 text-white placeholder-slate-muted focus:outline-none focus:border-accent"
+            className="w-full bg-card border border-ink/15 rounded-lg px-4 py-3 text-ink placeholder-ink-light/50 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20"
             placeholder="your@email.com"
           />
           {errors.email && (
-            <p className="text-red-400 text-sm mt-1">{errors.email}</p>
+            <p className="text-red-600 text-sm mt-1">{errors.email}</p>
           )}
         </div>
       </div>
       <div>
         <label
           htmlFor="subject"
-          className="block text-sm font-medium text-slate-text mb-2"
+          className="block text-sm font-medium text-ink mb-2"
         >
           Subject
         </label>
@@ -118,14 +121,14 @@ export default function ContactForm() {
           id="subject"
           name="subject"
           type="text"
-          className="w-full bg-navy-mid border border-navy-mid rounded-lg px-4 py-3 text-white placeholder-slate-muted focus:outline-none focus:border-accent"
+          className="w-full bg-card border border-ink/15 rounded-lg px-4 py-3 text-ink placeholder-ink-light/50 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20"
           placeholder="What's this about?"
         />
       </div>
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-medium text-slate-text mb-2"
+          className="block text-sm font-medium text-ink mb-2"
         >
           Message *
         </label>
@@ -133,22 +136,22 @@ export default function ContactForm() {
           id="message"
           name="message"
           rows={5}
-          className="w-full bg-navy-mid border border-navy-mid rounded-lg px-4 py-3 text-white placeholder-slate-muted focus:outline-none focus:border-accent resize-none"
+          className="w-full bg-card border border-ink/15 rounded-lg px-4 py-3 text-ink placeholder-ink-light/50 focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 resize-none"
           placeholder="Tell McLean Tutoring Center about your goals..."
         />
         {errors.message && (
-          <p className="text-red-400 text-sm mt-1">{errors.message}</p>
+          <p className="text-red-600 text-sm mt-1">{errors.message}</p>
         )}
       </div>
       {state === 'error' && (
-        <p className="text-red-400 text-sm">
+        <p className="text-red-600 text-sm">
           Something went wrong. Please try again or email directly.
         </p>
       )}
       <button
         type="submit"
         disabled={state === 'loading'}
-        className="w-full bg-accent text-navy font-bold py-3 rounded-lg hover:bg-accent-dark transition-colors disabled:opacity-50"
+        className="w-full bg-brand text-white font-bold py-3 rounded-lg hover:bg-brand-dark transition-colors disabled:opacity-50"
       >
         {state === 'loading' ? 'Sending...' : 'Send Message'}
       </button>

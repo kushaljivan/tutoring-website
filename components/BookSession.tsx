@@ -4,17 +4,17 @@ import Script from 'next/script'
 
 export default function BookSession() {
   return (
-    <section id="book" className="bg-navy py-24 px-6 scroll-mt-24">
+    <section id="book" className="bg-cream py-24 px-6 scroll-mt-24">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">
+        <h2 className="font-serif text-3xl font-bold text-ink mb-4">
           Schedule Your Free Consultation
         </h2>
-        <p className="text-slate-text text-lg mb-10 max-w-2xl mx-auto">
+        <p className="text-ink-light text-lg mb-10 max-w-2xl mx-auto">
           Book a free 30-minute call to discuss your goals, your current level,
           and how we can work together to get results.
         </p>
         <div
-          className="calendly-inline-widget rounded-2xl overflow-hidden"
+          className="calendly-inline-widget rounded-2xl overflow-hidden border border-ink/10 shadow-card"
           data-url="https://calendly.com/kjivan525?hide_gdpr_banner=1"
           style={{ minWidth: '320px', height: '700px' }}
         />
