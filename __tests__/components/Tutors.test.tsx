@@ -9,10 +9,14 @@ describe('Tutors', () => {
     ).toBeInTheDocument()
   })
 
-  it('renders at least three tutor cards with school and specialty', () => {
+  it('renders a tutor card with name, school, and specialty', () => {
     render(<Tutors />)
-    const cards = screen.getAllByRole('heading', { level: 3 })
-    expect(cards.length).toBeGreaterThanOrEqual(3)
-    expect(screen.getAllByText(/class of/i).length).toBeGreaterThanOrEqual(3)
+    expect(
+      screen.getByRole('heading', { level: 3, name: /kushal jivan/i })
+    ).toBeInTheDocument()
+    expect(
+      screen.getByText(/virginia tech · applied math & computer science/i)
+    ).toBeInTheDocument()
+    expect(screen.getByText(/math · cs · reading & writing · sat/i)).toBeInTheDocument()
   })
 })

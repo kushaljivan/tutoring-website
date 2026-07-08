@@ -1,28 +1,38 @@
-// PLACEHOLDER PROFILES — Kushal will supply real tutor names, schools, and bios.
-// Replace the entries in this array only; the card layout stays the same.
+// Add new tutors to this array; the card layout stays the same.
 const tutors = [
   {
-    initial: 'K',
-    name: 'Kushal J.',
-    school: 'Langley HS · Class of 2026',
-    specialty: 'SAT Math · Calculus',
-    bio: 'Scored 1550+ on the 2024 SAT. Tutors math from Pre-Algebra through AP Calculus BC and loves showing students the shortcuts that make hard problems feel easy.',
-  },
-  {
-    initial: 'A',
-    name: 'Tutor Name',
-    school: 'McLean HS · Class of 2025',
-    specialty: 'English & Writing',
-    bio: 'AP Lang and Lit specialist who helps students find their voice — from 6th-grade book reports to college application essays.',
-  },
-  {
-    initial: 'S',
-    name: 'Tutor Name',
-    school: 'Langley HS · Class of 2026',
-    specialty: 'Elementary & Middle School Math',
-    bio: 'Patient and encouraging, specializes in building confidence and strong foundations for younger students.',
+    name: 'Kushal Jivan',
+    school: 'Virginia Tech · Applied Math & Computer Science',
+    specialty: 'Math · CS · Reading & Writing · SAT',
+    bio: "Hey, I'm Kushal! I'm heading to Virginia Tech to study Applied Math and Computer Science. I tutor math, computer science, reading, and English writing — plus SAT prep — and I love the moment a tricky concept finally clicks. Sessions with me are relaxed, encouraging, and focused on building real confidence.",
   },
 ]
+
+function FriendlyAvatar() {
+  return (
+    <svg viewBox="0 0 64 64" className="w-20 h-20" aria-hidden="true">
+      {/* warm background */}
+      <circle cx="32" cy="32" r="32" fill="#FDEBD2" />
+      {/* shoulders */}
+      <path d="M12 64a20 15 0 0 1 40 0Z" fill="#2563EB" />
+      {/* head */}
+      <circle cx="32" cy="27" r="13" fill="#9C6644" />
+      {/* hair */}
+      <path d="M19 26c0-8 6-13 13-13s13 5 13 13c-2.5-4.5-6.5-6.5-13-6.5S21.5 21.5 19 26Z" fill="#2F2013" />
+      {/* eyes */}
+      <circle cx="27" cy="27" r="1.7" fill="#2F2013" />
+      <circle cx="37" cy="27" r="1.7" fill="#2F2013" />
+      {/* smile */}
+      <path
+        d="M26.5 32c1.7 2.3 3.8 3.2 5.5 3.2s3.8-.9 5.5-3.2"
+        stroke="#2F2013"
+        strokeWidth="1.8"
+        fill="none"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
 
 export default function Tutors() {
   return (
@@ -32,17 +42,17 @@ export default function Tutors() {
           Meet Our Tutors
         </h2>
         <p className="text-ink-light text-center mb-12 max-w-xl mx-auto">
-          Real students from your student&apos;s schools — who just took the same
-          classes and the same tests.
+          Real students who just took the same classes and the same tests —
+          and know exactly how to help.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {tutors.map((t) => (
             <div
-              key={t.name + t.initial}
-              className="bg-card border border-ink/10 rounded-2xl p-8 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
+              key={t.name}
+              className="w-full max-w-sm bg-card border border-ink/10 rounded-2xl p-8 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
             >
-              <div className="mx-auto mb-4 w-20 h-20 rounded-full bg-amber/15 border border-amber/30 flex items-center justify-center">
-                <span className="font-serif text-3xl font-bold text-ink">{t.initial}</span>
+              <div className="mx-auto mb-4 w-20 h-20 rounded-full border border-amber/30 overflow-hidden">
+                <FriendlyAvatar />
               </div>
               <h3 className="font-serif text-xl font-bold text-ink">{t.name}</h3>
               <p className="text-ink-light/70 text-sm mt-0.5">{t.school}</p>
