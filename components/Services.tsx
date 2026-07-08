@@ -1,4 +1,5 @@
 import { CalculatorIcon, BookOpenIcon, RulerIcon } from '@/components/icons'
+import { CalculatorIllustration } from '@/components/illustrations'
 
 const services = [
   {
@@ -28,6 +29,7 @@ export default function Services() {
   return (
     <section id="services" className="bg-cream-dark py-24 px-6 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
+        <CalculatorIllustration className="w-16 h-16 mx-auto mb-4" />
         <h2 className="font-serif text-3xl font-bold text-ink text-center mb-12">
           What We Teach
         </h2>

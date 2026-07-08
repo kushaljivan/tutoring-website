@@ -4,6 +4,7 @@ import BookCTA from '@/components/BookCTA'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
 import { CalculatorIcon, BookOpenIcon, CheckIcon } from '@/components/icons'
+import { CalculatorIllustration, BookIllustration } from '@/components/illustrations'
 
 export const metadata: Metadata = {
   title: 'SAT Prep | McLean Tutoring Center',
@@ -64,7 +65,9 @@ export default function SatPrepPage() {
 
       {/* Hero */}
       <section className="bg-cream py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto flex items-center justify-center gap-8 lg:gap-12">
+          <CalculatorIllustration className="hidden lg:block w-32 h-32 shrink-0 -rotate-6" />
+          <div className="max-w-4xl text-center">
           <span className="text-brand text-sm font-semibold uppercase tracking-widest">SAT Prep · McLean, VA</span>
           <h1 className="font-serif mt-3 text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight">
             Score 200+ Points Higher.<br />
@@ -81,6 +84,8 @@ export default function SatPrepPage() {
             </a>
             <span className="text-ink-light/70 text-sm">Starting at $45/hr · No commitment</span>
           </div>
+          </div>
+          <BookIllustration className="hidden lg:block w-32 h-32 shrink-0 rotate-6" />
         </div>
       </section>
 

@@ -3,6 +3,7 @@ import TrustBar from '@/components/TrustBar'
 import BookCTA from '@/components/BookCTA'
 import Footer from '@/components/Footer'
 import { CalculatorIcon, BookOpenIcon, CheckIcon } from '@/components/icons'
+import { RulerIllustration, NotebookIllustration } from '@/components/illustrations'
 
 export const metadata: Metadata = {
   title: 'Math & English Tutoring | McLean Tutoring Center',
@@ -61,7 +62,9 @@ export default function MathPrepPage() {
 
       {/* Hero */}
       <section className="bg-cream py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto flex items-center justify-center gap-8 lg:gap-12">
+          <RulerIllustration className="hidden lg:block w-32 h-32 shrink-0" />
+          <div className="max-w-4xl text-center">
           <span className="text-brand text-sm font-semibold uppercase tracking-widest">Math & English Tutoring · McLean, VA</span>
           <h1 className="font-serif mt-3 text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight">
             Math & English.<br />
@@ -79,6 +82,8 @@ export default function MathPrepPage() {
             </a>
             <span className="text-ink-light/70 text-sm">Starting at $45/hr · No commitment</span>
           </div>
+          </div>
+          <NotebookIllustration className="hidden lg:block w-32 h-32 shrink-0" />
         </div>
       </section>
 

@@ -1,9 +1,12 @@
+import { BookIllustration, PencilIllustration } from '@/components/illustrations'
+
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="py-16 md:py-20 flex items-center justify-center bg-cream px-6"
+      className="py-16 md:py-20 flex items-center justify-center gap-6 lg:gap-12 bg-cream px-6"
     >
+      <BookIllustration className="hidden lg:block w-32 h-32 shrink-0 -rotate-6" />
       <div className="text-center max-w-3xl">
         <p className="text-brand text-xs md:text-sm font-semibold uppercase tracking-widest mb-4">
           Serving McLean, Tysons, Great Falls &amp; Vienna
@@ -37,6 +40,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
+      <PencilIllustration className="hidden lg:block w-32 h-32 shrink-0 rotate-6" />
     </section>
   )
 }

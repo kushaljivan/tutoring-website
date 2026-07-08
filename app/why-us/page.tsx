@@ -6,6 +6,7 @@ import {
   SchoolIcon, UsersIcon, DollarIcon, PencilIcon, BookOpenIcon,
   GraduationCapIcon, TrendingUpIcon, StarIcon, CheckIcon, XIcon, MinusIcon,
 } from '@/components/icons'
+import { PencilIllustration, EraserIllustration } from '@/components/illustrations'
 
 export const metadata: Metadata = {
   title: 'Why McLean Tutoring Center?',
@@ -93,7 +94,9 @@ export default function WhyUsPage() {
 
       {/* Hero */}
       <section className="bg-cream py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto flex items-center justify-center gap-8 lg:gap-12">
+          <PencilIllustration className="hidden lg:block w-32 h-32 shrink-0" />
+          <div className="max-w-4xl text-center">
           <span className="text-brand text-sm font-semibold uppercase tracking-widest">Why McLean Tutoring Center?</span>
           <h1 className="font-serif mt-3 text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight">
             Tutors Who Know<br />
@@ -105,6 +108,8 @@ export default function WhyUsPage() {
             students across McLean and Northern Virginia, starting at{' '}
             <strong className="text-ink">$45/hr</strong> with no contracts.
           </p>
+          </div>
+          <EraserIllustration className="hidden lg:block w-32 h-32 shrink-0" />
         </div>
       </section>
 

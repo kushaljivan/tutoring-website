@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { NotebookIllustration } from '@/components/illustrations'
 
 const testimonials = [
   {
@@ -43,6 +44,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="bg-cream py-24 px-6 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
+        <NotebookIllustration className="w-16 h-16 mx-auto mb-4" />
         <h2 className="font-serif text-3xl font-bold text-ink text-center mb-12">
           What Students &amp; Parents Say
         </h2>
