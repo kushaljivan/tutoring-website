@@ -1,6 +1,21 @@
 @import "tailwindcss";
 
 @theme {
+  /* Light theme */
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F3EEE5;
+  --color-ink: #1E3A5F;
+  --color-ink-light: #4A6285;
+  --color-brand: #2563EB;
+  --color-brand-dark: #1D4ED8;
+  --color-amber: #F59E0B;
+  --color-amber-dark: #B45309;
+  --color-card: #ffffff;
+  --shadow-card: 0 2px 12px rgb(30 58 95 / 0.08);
+  --shadow-card-hover: 0 10px 28px rgb(30 58 95 / 0.14);
+  --font-serif: var(--font-lora), Georgia, serif;
+
+  /* LEGACY dark tokens — deleted in the final cleanup task once no component references them */
   --color-navy: #0f172a;
   --color-navy-light: #1e293b;
   --color-navy-mid: #334155;

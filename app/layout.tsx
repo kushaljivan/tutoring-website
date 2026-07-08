@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Lora } from 'next/font/google'
 import Nav from '@/components/Nav'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
+const lora = Lora({ subsets: ['latin'], variable: '--font-lora' })
 
 export const metadata: Metadata = {
   title: 'McLean Tutoring Center — Math & English Tutoring, SAT Prep',
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-navy text-white`}>
+      <body className={`${inter.className} ${lora.variable} bg-cream text-ink`}>
         <Nav />
         {children}
       </body>
