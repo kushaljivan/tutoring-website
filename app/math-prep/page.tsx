@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import TrustBar from '@/components/TrustBar'
 import BookCTA from '@/components/BookCTA'
 import Footer from '@/components/Footer'
+import { CalculatorIcon, BookOpenIcon, CheckIcon } from '@/components/icons'
 
 export const metadata: Metadata = {
   title: 'Math & English Tutoring | McLean Tutoring Center',
@@ -59,46 +60,46 @@ export default function MathPrepPage() {
       <TrustBar />
 
       {/* Hero */}
-      <section className="bg-navy py-24 px-6">
+      <section className="bg-cream py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="text-accent text-sm font-semibold uppercase tracking-widest">Math & English Tutoring · McLean, VA</span>
-          <h1 className="mt-3 text-5xl md:text-6xl font-extrabold text-white leading-tight">
+          <span className="text-brand text-sm font-semibold uppercase tracking-widest">Math & English Tutoring · McLean, VA</span>
+          <h1 className="font-serif mt-3 text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight">
             Math & English.<br />
-            <span className="text-accent">Every Level, Every School.</span>
+            <span className="text-brand">Every Level, Every School.</span>
           </h1>
-          <p className="mt-6 text-xl text-slate-text max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl text-ink-light max-w-2xl mx-auto leading-relaxed">
             We tutor Math and English for students at{' '}
-            <strong className="text-white">Langley HS, McLean HS, Cooper MS, and Longfellow MS</strong>.
+            <strong className="text-ink">Langley HS, McLean HS, Cooper MS, and Longfellow MS</strong>.
             Our tutors recently took the same classes — we know the curriculum,
             the teachers, and exactly what gets tested.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="/#book" className="bg-accent text-navy font-bold text-lg px-8 py-4 rounded-xl hover:bg-accent-dark transition-colors">
+            <a href="/#book" className="bg-brand text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-brand-dark transition-colors">
               Book Free Consultation
             </a>
-            <span className="text-slate-muted text-sm">Starting at $45/hr · No commitment</span>
+            <span className="text-ink-light/70 text-sm">Starting at $45/hr · No commitment</span>
           </div>
         </div>
       </section>
 
       {/* Math Courses */}
-      <section className="bg-navy-light py-24 px-6">
+      <section className="bg-cream-dark py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 justify-center mb-4">
-            <span className="text-3xl">📐</span>
-            <h2 className="text-3xl font-bold text-white">Math Tutoring</h2>
+            <CalculatorIcon className="w-8 h-8 text-brand" />
+            <h2 className="font-serif text-3xl font-bold text-ink">Math Tutoring</h2>
           </div>
-          <p className="text-slate-text text-center mb-14 max-w-xl mx-auto">
+          <p className="text-ink-light text-center mb-14 max-w-xl mx-auto">
             From fractions to AP Calculus BC — we cover every math course taught at local schools.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {mathCourses.map((c) => (
-              <div key={c.level} className="bg-navy border border-navy-mid rounded-2xl p-6">
-                <h3 className="text-accent text-sm font-semibold uppercase tracking-wide mb-4">{c.level}</h3>
+              <div key={c.level} className="bg-card border border-ink/10 shadow-card rounded-2xl p-6">
+                <h3 className="text-brand text-sm font-semibold uppercase tracking-wide mb-4">{c.level}</h3>
                 <ul className="space-y-2">
                   {c.subjects.map((s) => (
-                    <li key={s} className="text-white text-sm flex items-center gap-2">
-                      <span className="text-accent text-xs">✓</span> {s}
+                    <li key={s} className="text-ink text-sm flex items-center gap-2">
+                      <CheckIcon className="w-3.5 h-3.5 text-brand shrink-0" /> {s}
                     </li>
                   ))}
                 </ul>
@@ -109,23 +110,23 @@ export default function MathPrepPage() {
       </section>
 
       {/* English Courses */}
-      <section className="bg-navy py-24 px-6">
+      <section className="bg-cream py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 justify-center mb-4">
-            <span className="text-3xl">📖</span>
-            <h2 className="text-3xl font-bold text-white">English Tutoring</h2>
+            <BookOpenIcon className="w-8 h-8 text-brand" />
+            <h2 className="font-serif text-3xl font-bold text-ink">English Tutoring</h2>
           </div>
-          <p className="text-slate-text text-center mb-14 max-w-xl mx-auto">
+          <p className="text-ink-light text-center mb-14 max-w-xl mx-auto">
             From reading comprehension to college essays — we help students write clearly, read critically, and score higher.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {englishCourses.map((c) => (
-              <div key={c.level} className="bg-navy-light border border-navy-mid rounded-2xl p-6">
-                <h3 className="text-accent text-sm font-semibold uppercase tracking-wide mb-4">{c.level}</h3>
+              <div key={c.level} className="bg-card border border-ink/10 shadow-card rounded-2xl p-6">
+                <h3 className="text-brand text-sm font-semibold uppercase tracking-wide mb-4">{c.level}</h3>
                 <ul className="space-y-2">
                   {c.subjects.map((s) => (
-                    <li key={s} className="text-white text-sm flex items-center gap-2">
-                      <span className="text-accent text-xs">✓</span> {s}
+                    <li key={s} className="text-ink text-sm flex items-center gap-2">
+                      <CheckIcon className="w-3.5 h-3.5 text-brand shrink-0" /> {s}
                     </li>
                   ))}
                 </ul>
@@ -136,16 +137,16 @@ export default function MathPrepPage() {
       </section>
 
       {/* Local schools */}
-      <section className="bg-navy-light py-20 px-6">
+      <section className="bg-cream-dark py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">We Know Your School&apos;s Curriculum</h2>
-          <p className="text-slate-text text-lg mb-10 max-w-2xl mx-auto">
+          <h2 className="font-serif text-3xl font-bold text-ink mb-4">We Know Your School&apos;s Curriculum</h2>
+          <p className="text-ink-light text-lg mb-10 max-w-2xl mx-auto">
             Our tutors attended these schools. We&apos;re familiar with how each
             school paces its courses, what teachers emphasize, and how tests are structured.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {schools.map((s) => (
-              <span key={s} className="bg-navy border border-navy-mid text-slate-text text-sm px-4 py-2 rounded-full">
+              <span key={s} className="bg-card border border-ink/10 text-ink shadow-card text-sm px-4 py-2 rounded-full">
                 {s}
               </span>
             ))}
@@ -154,15 +155,15 @@ export default function MathPrepPage() {
       </section>
 
       {/* How it works */}
-      <section className="bg-navy py-24 px-6">
+      <section className="bg-cream py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-white text-center mb-14">How We Work</h2>
+          <h2 className="font-serif text-3xl font-bold text-ink text-center mb-14">How We Work</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((s) => (
-              <div key={s.num} className="bg-navy-light border border-navy-mid rounded-2xl p-8">
-                <div className="text-accent text-4xl font-extrabold mb-4">{s.num}</div>
-                <h3 className="text-xl font-bold text-white mb-3">{s.title}</h3>
-                <p className="text-slate-text leading-relaxed">{s.body}</p>
+              <div key={s.num} className="bg-card border border-ink/10 shadow-card rounded-2xl p-8">
+                <div className="text-brand text-4xl font-extrabold mb-4">{s.num}</div>
+                <h3 className="text-xl font-bold text-ink mb-3">{s.title}</h3>
+                <p className="text-ink-light leading-relaxed">{s.body}</p>
               </div>
             ))}
           </div>
