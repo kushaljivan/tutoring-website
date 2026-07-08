@@ -1,6 +1,7 @@
 import TrustBar from '@/components/TrustBar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import Tutors from '@/components/Tutors'
 import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
 import CollegeAcceptances from '@/components/CollegeAcceptances'
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <Tutors />
         <Services />
         <Testimonials />
         <CollegeAcceptances />
