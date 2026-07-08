@@ -230,7 +230,7 @@ export default function MathPrepPage() {
       {/* How it works */}
       <section className="bg-cream py-16 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="font-serif text-3xl font-bold text-ink text-center mb-14">How We Work</h2>
+          <h2 className="font-serif text-3xl font-bold text-ink text-center mb-10">How We Work</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((s) => (
               <div key={s.num} className="bg-card border border-ink/10 shadow-card rounded-2xl p-8">

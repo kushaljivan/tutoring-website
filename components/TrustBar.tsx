@@ -2,7 +2,7 @@ import { DollarIcon, GraduationCapIcon, UsersIcon, MapPinIcon } from '@/componen
 
 const stats = [
   { Icon: DollarIcon, text: 'Starting at $50/hr' },
-  { Icon: GraduationCapIcon, text: 'All Subjects · K-12 · SAT Prep' },
+  { Icon: GraduationCapIcon, text: 'K-12 All Subjects · SAT/ACT · College Prep' },
   { Icon: UsersIcon, text: '50+ students helped' },
   { Icon: MapPinIcon, text: 'McLean, Tysons, Great Falls & Vienna' },
 ]

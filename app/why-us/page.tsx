@@ -117,7 +117,7 @@ export default function WhyUsPage() {
       <section className="bg-cream-dark py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-ink text-center mb-4">Who We Help</h2>
-          <p className="text-ink-light text-center mb-14 max-w-xl mx-auto">
+          <p className="text-ink-light text-center mb-10 max-w-xl mx-auto">
             We work with students at every stage — from building foundational skills in elementary school to pushing for top scores before college applications.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -146,7 +146,7 @@ export default function WhyUsPage() {
       {/* Three differences */}
       <section className="bg-cream py-16 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="font-serif text-3xl font-bold text-ink text-center mb-14">The McLean Tutoring Center Difference</h2>
+          <h2 className="font-serif text-3xl font-bold text-ink text-center mb-10">The McLean Tutoring Center Difference</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {differences.map((d) => (
               <div key={d.title} className="bg-card border border-ink/10 shadow-card rounded-2xl p-8">
@@ -165,7 +165,7 @@ export default function WhyUsPage() {
       <section className="bg-cream-dark py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-ink text-center mb-4">How We Stack Up</h2>
-          <p className="text-ink-light text-center mb-14 max-w-xl mx-auto">
+          <p className="text-ink-light text-center mb-10 max-w-xl mx-auto">
             See how McLean Tutoring Center compares to the alternatives parents in the area typically consider.
           </p>
 
@@ -234,7 +234,7 @@ export default function WhyUsPage() {
       <section className="bg-cream py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-3xl font-bold text-ink mb-4">Simple, Transparent Pricing</h2>
-          <p className="text-ink-light text-lg mb-12 max-w-xl mx-auto">
+          <p className="text-ink-light text-lg mb-8 max-w-xl mx-auto">
             No hidden fees, no contracts, no pressure. Pay per session.
           </p>
           <div className="bg-card border border-brand/30 shadow-card rounded-2xl p-10">
@@ -268,7 +268,7 @@ export default function WhyUsPage() {
       {/* FAQ */}
       <section className="bg-cream-dark py-16 px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-serif text-3xl font-bold text-ink text-center mb-14">Frequently Asked Questions</h2>
+          <h2 className="font-serif text-3xl font-bold text-ink text-center mb-10">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {faqs.map((faq) => (
               <div key={faq.q} className="bg-card border border-ink/10 shadow-card rounded-2xl p-7">

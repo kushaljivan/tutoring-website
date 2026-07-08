@@ -1,12 +1,14 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const tabs = [
   { href: '/', label: 'Home' },
-  { href: '/sat-prep', label: 'SAT Prep' },
+  { href: '/sat-prep', label: 'SAT/ACT Prep' },
   { href: '/math-prep', label: 'Schoolwork' },
+  { href: '/college-prep', label: 'College Prep' },
   { href: '/why-us', label: 'Why Us?' },
 ]
 
@@ -18,7 +20,14 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Top row: brand + CTA */}
         <div className="h-12 md:h-14 flex items-center justify-between">
-          <Link href="/" className="text-ink font-serif font-bold text-lg md:text-xl shrink-0">
+          <Link href="/" className="flex items-center gap-2 text-ink font-serif font-bold text-lg md:text-xl shrink-0">
+            <Image
+              src="/logo.png"
+              alt=""
+              width={40}
+              height={36}
+              className="w-9 h-8 md:w-10 md:h-9 object-contain"
+            />
             McLean Tutoring Center
           </Link>
           <div className="flex items-center gap-3 md:gap-4">

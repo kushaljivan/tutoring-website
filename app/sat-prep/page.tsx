@@ -3,20 +3,20 @@ import TrustBar from '@/components/TrustBar'
 import BookCTA from '@/components/BookCTA'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
-import { CalculatorIcon, BookOpenIcon, CheckIcon } from '@/components/icons'
+import { CalculatorIcon, BookOpenIcon, CheckIcon, TrendingUpIcon } from '@/components/icons'
 import { CalculatorIllustration, BookIllustration } from '@/components/illustrations'
 
 export const metadata: Metadata = {
-  title: 'SAT Prep | McLean Tutoring Center',
+  title: 'SAT & ACT Prep | McLean Tutoring Center',
   description:
-    '1-on-1 SAT prep in McLean, VA. Our tutors scored 1550+ and took the SAT in 2024–2025. Starting at $50/hr.',
+    '1-on-1 SAT and ACT prep in McLean, VA. Our tutors scored 1550+ and took these tests in 2024–2025. Starting at $50/hr.',
 }
 
 const steps = [
   {
     num: '01',
     title: 'Diagnostic Session',
-    body: 'We start with a full practice SAT to pinpoint exactly where points are being lost — not just a score, but a section-by-section breakdown.',
+    body: 'We start with a full practice SAT or ACT to pinpoint exactly where points are being lost — not just a score, but a section-by-section breakdown. Not sure which test to take? The diagnostic tells us that too.',
   },
   {
     num: '02',
@@ -52,6 +52,17 @@ const englishTopics = [
   'Process of elimination',
 ]
 
+const actTopics = [
+  'English: grammar & rhetoric',
+  'Math: through pre-calculus',
+  'Reading: speed & pacing',
+  'Science: data & reasoning',
+  'Section time management',
+  'Guessing & elimination strategy',
+  'Full timed practice tests',
+  'SAT vs. ACT: which fits you',
+]
+
 const results = [
   { name: 'Jamie R.', school: 'Langley HS', before: 1180, after: 1430, photo: '/student-jamie.jpg' },
   { name: 'Marcus W.', school: 'McLean HS', before: 1200, after: 1510, photo: '/student-david.jpg' },
@@ -68,15 +79,16 @@ export default function SatPrepPage() {
         <div className="max-w-6xl mx-auto flex items-center justify-center gap-8 lg:gap-12">
           <CalculatorIllustration className="hidden lg:block w-32 h-32 shrink-0 -rotate-6" />
           <div className="max-w-4xl text-center">
-          <span className="text-brand text-sm font-semibold uppercase tracking-widest">SAT Prep · McLean, VA</span>
+          <span className="text-brand text-sm font-semibold uppercase tracking-widest">SAT & ACT Prep · McLean, VA</span>
           <h1 className="font-serif mt-3 text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight">
             Score 200+ Points Higher.<br />
             <span className="text-brand">We Know Exactly How.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-ink-light max-w-2xl mx-auto leading-relaxed">
-            Our tutors took the SAT in 2024–2025 and scored <strong className="text-ink">1550+</strong>. We
-            teach the current test — the exact strategies, patterns, and
-            shortcuts that work right now.
+            We prep for <strong className="text-ink">both the SAT and the ACT</strong>. Our
+            tutors took these tests in 2024–2025 and scored{' '}
+            <strong className="text-ink">1550+</strong> — we teach the current tests, with
+            the exact strategies, patterns, and shortcuts that work right now.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="/#book" className="bg-brand text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-brand-dark transition-colors">
@@ -118,7 +130,7 @@ export default function SatPrepPage() {
       {/* How it works */}
       <section className="bg-cream py-16 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="font-serif text-3xl font-bold text-ink text-center mb-14">How It Works</h2>
+          <h2 className="font-serif text-3xl font-bold text-ink text-center mb-10">How It Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((s) => (
               <div key={s.num} className="bg-card border border-ink/10 shadow-card rounded-2xl p-8">
@@ -135,10 +147,12 @@ export default function SatPrepPage() {
       <section className="bg-cream-dark py-16 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-serif text-3xl font-bold text-ink text-center mb-4">What We Cover</h2>
-          <p className="text-ink-light text-center mb-14 max-w-xl mx-auto">
+          <p className="text-ink-light text-center mb-10 max-w-xl mx-auto">
             Every session is targeted — we focus on the specific skills that move your score.
+            Not sure whether to take the SAT or ACT? We&apos;ll run a diagnostic of each and
+            tell you where your score ceiling is higher.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-card border border-ink/10 shadow-card rounded-2xl p-8">
               <h3 className="font-serif text-xl font-bold text-ink mb-6 flex items-center gap-2">
                 <CalculatorIcon className="w-6 h-6 text-brand" /> SAT Math
@@ -157,6 +171,18 @@ export default function SatPrepPage() {
               </h3>
               <ul className="space-y-2">
                 {englishTopics.map((t) => (
+                  <li key={t} className="flex items-center gap-2 text-ink-light text-sm">
+                    <CheckIcon className="w-3.5 h-3.5 text-brand shrink-0" /> {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-card border border-ink/10 shadow-card rounded-2xl p-8">
+              <h3 className="font-serif text-xl font-bold text-ink mb-6 flex items-center gap-2">
+                <TrendingUpIcon className="w-6 h-6 text-brand" /> ACT — All Sections
+              </h3>
+              <ul className="space-y-2">
+                {actTopics.map((t) => (
                   <li key={t} className="flex items-center gap-2 text-ink-light text-sm">
                     <CheckIcon className="w-3.5 h-3.5 text-brand shrink-0" /> {t}
                   </li>

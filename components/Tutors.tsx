@@ -44,7 +44,7 @@ export default function Tutors() {
         <h2 className="font-serif text-3xl font-bold text-ink text-center mb-4">
           Meet Our Tutors
         </h2>
-        <p className="text-ink-light text-center mb-12 max-w-xl mx-auto">
+        <p className="text-ink-light text-center mb-8 max-w-xl mx-auto">
           Real students who just took the same classes and the same tests —
           and know exactly how to help.
         </p>
