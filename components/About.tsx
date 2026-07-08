@@ -7,7 +7,7 @@ export default function About() {
         <div className="flex-shrink-0 w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden">
           <Image
             src="/logo.png"
-            alt="McLean Tutors"
+            alt="McLean Tutoring Center"
             width={220}
             height={220}
             className="w-full h-full object-cover scale-[1.12]"
@@ -16,7 +16,7 @@ export default function About() {
         <div>
           <h2 className="text-3xl font-bold text-white mb-4">About Our Tutors</h2>
           <p className="text-slate-text text-lg leading-relaxed mb-4">
-            McLean Tutors provides 1-on-1 Math and English tutoring for students
+            McLean Tutoring Center provides 1-on-1 Math and English tutoring for students
             from elementary through high school — including SAT prep. We work
             with students at <strong className="text-white">Langley HS, McLean HS,
             Cooper MS, and Longfellow MS</strong>, and schools throughout the DMV.
@@ -32,7 +32,7 @@ export default function About() {
               <div className="text-slate-muted text-sm mt-1">Years Experience</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-accent">30+</div>
+              <div className="text-3xl font-bold text-accent">50+</div>
               <div className="text-slate-muted text-sm mt-1">Students Helped</div>
             </div>
             <div>

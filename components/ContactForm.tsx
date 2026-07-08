@@ -57,7 +57,7 @@ export default function ContactForm() {
         <div className="text-accent text-5xl mb-4">✓</div>
         <h3 className="text-xl font-bold text-white mb-2">Message sent!</h3>
         <p className="text-slate-text">
-          We'll get back to you within 24 hours.
+          We'll get back to you within 12 hours.
         </p>
       </div>
     )
@@ -134,7 +134,7 @@ export default function ContactForm() {
           name="message"
           rows={5}
           className="w-full bg-navy-mid border border-navy-mid rounded-lg px-4 py-3 text-white placeholder-slate-muted focus:outline-none focus:border-accent resize-none"
-          placeholder="Tell Kushal about your goals..."
+          placeholder="Tell McLean Tutoring Center about your goals..."
         />
         {errors.message && (
           <p className="text-red-400 text-sm mt-1">{errors.message}</p>

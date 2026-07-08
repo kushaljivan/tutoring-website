@@ -1,7 +1,7 @@
 const stats = [
   { icon: '💰', text: 'Starting at $45/hr' },
-  { icon: '🎓', text: 'Math & English · Elementary through HS · SAT Prep' },
-  { icon: '👥', text: '30+ students helped' },
+  { icon: '🎓', text: 'Math & English · K-12 · SAT Prep' },
+  { icon: '👥', text: '50+ students helped' },
   { icon: '📍', text: 'McLean, Tysons, Great Falls & Vienna' },
 ]
 

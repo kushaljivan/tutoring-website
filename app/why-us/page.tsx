@@ -4,37 +4,72 @@ import BookCTA from '@/components/BookCTA'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Why McLean Tutors?',
+  title: 'Why McLean Tutoring Center?',
   description:
-    'Affordable SAT and math tutoring in McLean, VA. Our tutors scored 1550+ and took the SAT in 2024–2025. Starting at $45/hr vs $150+ at big tutoring centers.',
+    'Affordable K-12 tutoring in McLean, VA — Math, English, and SAT prep. Our tutors recently took the same classes your student is in. Starting at $45/hr, no contracts.',
 }
 
 const differences = [
   {
-    icon: '🧠',
-    title: 'We Just Did This',
-    body: 'Our tutors scored 1550+ on the SAT in 2024–2025 — not years ago. The test has changed. We know the current format, the current tricks, and what actually works on this version of the exam.',
+    icon: '🏫',
+    title: 'We Know the Curriculum',
+    body: 'Our tutors recently attended the same FCPS schools — Langley, McLean, Cooper, Longfellow, and more. We know the teachers, the pacing, and exactly what shows up on tests. This isn\'t generic tutoring; it\'s targeted to your student\'s specific class.',
   },
   {
     icon: '🤝',
     title: 'We Get It — We Were You',
-    body: "We're in high school or just graduated. We know what it feels like to have AP homework, extracurriculars, and a looming SAT date at the same time. We don't lecture — we help.",
+    body: "We're in high school or just graduated. We remember what it's like to juggle AP homework, extracurriculars, and a big test — all at the same time. We don't lecture from a textbook. We help the way a knowledgeable older sibling would.",
   },
   {
     icon: '💰',
     title: 'Fraction of the Cost',
-    body: "Big centers charge $150–200+/hr for tutors who may have taken the SAT a decade ago. We start at $45/hr. Same results. A tutor who actually relates to your student. No long contracts.",
+    body: "Big tutoring centers charge $150–200+/hr and often assign tutors with no connection to your local schools. We start at $45/hr — same results, a tutor who actually knows your student's curriculum, and zero long-term contracts.",
+  },
+]
+
+const whoWeHelp = [
+  {
+    grade: 'Elementary School',
+    icon: '✏️',
+    subjects: ['Reading & Phonics', 'Writing Fundamentals', 'Math Foundations', 'Homework Help'],
+    desc: 'Building strong habits and filling gaps early makes everything easier later. We meet students where they are and make learning feel manageable.',
+  },
+  {
+    grade: 'Middle School',
+    icon: '📚',
+    subjects: ['Pre-Algebra & Algebra I', 'Geometry', 'Essay Writing', 'Reading Comprehension'],
+    desc: 'Middle school is where a lot of students start falling behind. We catch those gaps before they compound in high school.',
+  },
+  {
+    grade: 'High School',
+    icon: '🎓',
+    subjects: ['Algebra II through AP Calc BC', 'AP English Lang & Lit', 'Analytical Writing', 'Course-specific tutoring'],
+    desc: 'GPA matters. We help students keep up, get ahead, and build the confidence that shows in grades.',
+  },
+  {
+    grade: 'SAT / ACT Prep',
+    icon: '📈',
+    subjects: ['SAT Math & Reading/Writing', 'ACT all sections', 'Score strategy', 'Full practice tests'],
+    desc: 'Our tutors scored 1550+ on the SAT in 2024–2025. We know the current test — not a version from years ago.',
   },
 ]
 
 const faqs = [
   {
+    q: 'Do you only do SAT prep, or can you help with school coursework too?',
+    a: 'We do both. Most of our students come to us for help with school courses — math from Pre-Algebra through AP Calculus, English writing and reading, and more. SAT/ACT prep is one part of what we offer, not the whole thing.',
+  },
+  {
+    q: 'My child is in elementary school. Can you help?',
+    a: 'Yes. We work with students as young as elementary school on reading, writing fundamentals, and math foundations. Building strong habits early makes a real difference as coursework gets harder.',
+  },
+  {
     q: 'How are your tutors qualified if they\'re in high school?',
-    a: 'Our tutors scored 1550+ on the SAT within the last 1–2 years — that\'s the 99th percentile. They know the current test format cold. Compare that to centers where tutors may have taken a very different version of the SAT years ago.',
+    a: 'Our tutors recently attended the same FCPS schools your student is in — they know the curriculum, the teachers, and what gets tested. For SAT prep, they scored 1550+ (99th percentile) on the 2024–2025 test. That combination of recent experience and local knowledge is hard to find anywhere else.',
   },
   {
     q: 'Do you have a minimum number of sessions?',
-    a: 'No contracts, no minimums. Start with a free 30-minute consultation, then book sessions as you need them. Most families do around 3 sessions per week.',
+    a: 'No contracts, no minimums. Start with a free 30-minute consultation, then book sessions as needed. Most families do 1–3 sessions per week depending on their goals.',
   },
   {
     q: 'Where do sessions take place?',
@@ -42,11 +77,7 @@ const faqs = [
   },
   {
     q: 'How much improvement can I expect?',
-    a: 'Results depend on starting point and effort, but our students have seen an average of 200+ point improvements on the SAT with 8–12 weeks of consistent tutoring.',
-  },
-  {
-    q: 'What if my student needs help with school math, not SAT?',
-    a: 'Absolutely — math tutoring from Pre-Algebra through AP Calculus BC is a core part of what we do. See our Math Tutoring page for details.',
+    a: 'It depends on the subject and starting point. For SAT, our students average 200+ point improvements over 8–12 weeks. For coursework, most students see grade improvements within the first few sessions as gaps get identified and addressed.',
   },
 ]
 
@@ -59,26 +90,55 @@ export default function WhyUsPage() {
       {/* Hero */}
       <section className="bg-navy py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="text-accent text-sm font-semibold uppercase tracking-widest">Why McLean Tutors?</span>
+          <span className="text-accent text-sm font-semibold uppercase tracking-widest">Why McLean Tutoring Center?</span>
           <h1 className="mt-3 text-5xl md:text-6xl font-extrabold text-white leading-tight">
-            Tutored by Students<br />
-            <span className="text-accent">Who Just Aced It.</span>
+            Tutors Who Know<br />
+            <span className="text-accent">Your Student&apos;s School.</span>
           </h1>
           <p className="mt-6 text-xl text-slate-text max-w-2xl mx-auto leading-relaxed">
-            Our tutors scored <strong className="text-white">1550+</strong> on the SAT in
-            2024–2025. Starting at <strong className="text-white">$45/hr</strong> — a fraction
-            of what big tutoring centers charge for tutors who took a different test years ago.
+            From <strong className="text-white">elementary school homework</strong> to{' '}
+            <strong className="text-white">AP classes and SAT prep</strong> — we tutor K-12
+            students across McLean and Northern Virginia, starting at{' '}
+            <strong className="text-white">$45/hr</strong> with no contracts.
           </p>
         </div>
       </section>
 
-      {/* Three differences */}
+      {/* Who we help */}
       <section className="bg-navy-light py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-white text-center mb-14">The McLean Tutors Difference</h2>
+          <h2 className="text-3xl font-bold text-white text-center mb-4">Who We Help</h2>
+          <p className="text-slate-text text-center mb-14 max-w-xl mx-auto">
+            We work with students at every stage — from building foundational skills in elementary school to pushing for top scores before college applications.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {whoWeHelp.map((w) => (
+              <div key={w.grade} className="bg-navy border border-navy-mid rounded-2xl p-8">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-3xl">{w.icon}</span>
+                  <h3 className="text-xl font-bold text-white">{w.grade}</h3>
+                </div>
+                <p className="text-slate-text text-sm mb-4 leading-relaxed">{w.desc}</p>
+                <ul className="space-y-1">
+                  {w.subjects.map((s) => (
+                    <li key={s} className="text-slate-text text-sm flex items-center gap-2">
+                      <span className="text-accent text-xs">✓</span> {s}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Three differences */}
+      <section className="bg-navy py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-white text-center mb-14">The McLean Tutoring Center Difference</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {differences.map((d) => (
-              <div key={d.title} className="bg-navy border border-navy-mid rounded-2xl p-8">
+              <div key={d.title} className="bg-navy-light border border-navy-mid rounded-2xl p-8">
                 <div className="text-4xl mb-4">{d.icon}</div>
                 <h3 className="text-xl font-bold text-white mb-3">{d.title}</h3>
                 <p className="text-slate-text leading-relaxed">{d.body}</p>
@@ -89,26 +149,26 @@ export default function WhyUsPage() {
       </section>
 
       {/* Comparison table */}
-      <section className="bg-navy py-24 px-6">
+      <section className="bg-navy-light py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-4">How We Stack Up</h2>
           <p className="text-slate-text text-center mb-14 max-w-xl mx-auto">
-            See how McLean Tutors compares to the alternatives parents in the area typically consider.
+            See how McLean Tutoring Center compares to the alternatives parents in the area typically consider.
           </p>
 
           {/* Header row */}
           <div className="grid grid-cols-4 gap-3 mb-3 text-center">
             <div />
-            <div className="bg-navy-light border border-navy-mid rounded-xl p-4">
+            <div className="bg-navy border border-navy-mid rounded-xl p-4">
               <div className="text-slate-muted text-xs uppercase tracking-wide mb-1">Big Centers</div>
               <div className="text-slate-text text-sm">(C2, Mathnasium, etc.)</div>
             </div>
-            <div className="bg-navy-light border border-navy-mid rounded-xl p-4">
+            <div className="bg-navy border border-navy-mid rounded-xl p-4">
               <div className="text-slate-muted text-xs uppercase tracking-wide mb-1">Random Freelancer</div>
               <div className="text-slate-text text-sm">(Craigslist, Wyzant)</div>
             </div>
             <div className="bg-accent/10 border border-accent/50 rounded-xl p-4">
-              <div className="text-accent text-xs uppercase tracking-wide font-bold mb-1">McLean Tutors</div>
+              <div className="text-accent text-xs uppercase tracking-wide font-bold mb-1">McLean Tutoring Center</div>
               <div className="text-white text-sm font-semibold">⭐ Recommended</div>
             </div>
           </div>
@@ -116,10 +176,11 @@ export default function WhyUsPage() {
           {/* Data rows */}
           {[
             { label: 'Hourly Rate', vals: ['$150–200+', '$60–100', 'From $45'] },
-            { label: 'SAT Taken', vals: ['Years ago', 'Varies', '2024–2025'] },
-            { label: 'SAT Score', vals: ['Unknown', 'Varies', '1550+'] },
-            { label: 'Knows current test', vals: ['❌', '❓', '✅'] },
+            { label: 'K-12 coursework', vals: ['Limited', '❓', '✅'] },
+            { label: 'Math & English', vals: ['Separate centers', '❓', '✅'] },
+            { label: 'Knows local curriculum', vals: ['❌', '❓', '✅'] },
             { label: 'Relatable to students', vals: ['❌', '❓', '✅'] },
+            { label: 'SAT/ACT Prep', vals: ['✅', '❓', '✅'] },
             { label: 'No long-term contract', vals: ['❌', '✅', '✅'] },
             { label: 'Local to McLean', vals: ['Some', 'Varies', '✅'] },
           ].map((row) => (
@@ -131,7 +192,7 @@ export default function WhyUsPage() {
                   className={`rounded-xl p-3 text-center text-sm ${
                     i === 2
                       ? 'bg-accent/10 border border-accent/30 text-white font-semibold'
-                      : 'bg-navy-light border border-navy-mid text-slate-text'
+                      : 'bg-navy border border-navy-mid text-slate-text'
                   }`}
                 >
                   {val}
@@ -143,13 +204,13 @@ export default function WhyUsPage() {
       </section>
 
       {/* Pricing */}
-      <section className="bg-navy-light py-24 px-6">
+      <section className="bg-navy py-24 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Simple, Transparent Pricing</h2>
           <p className="text-slate-text text-lg mb-12 max-w-xl mx-auto">
             No hidden fees, no contracts, no pressure. Pay per session.
           </p>
-          <div className="bg-navy border border-accent/30 rounded-2xl p-10">
+          <div className="bg-navy-light border border-accent/30 rounded-2xl p-10">
             <div className="text-accent text-6xl font-extrabold">$45</div>
             <div className="text-white text-xl font-semibold mt-1">per hour</div>
             <div className="text-slate-muted text-sm mt-1">Starting rate · discounts available for packages</div>
@@ -159,6 +220,7 @@ export default function WhyUsPage() {
                 'No minimum sessions',
                 'Cancel anytime',
                 'In-person or online',
+                'All subjects — Math, English & more',
                 'McLean & surrounding areas',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-slate-text">
@@ -177,12 +239,12 @@ export default function WhyUsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-navy py-24 px-6">
+      <section className="bg-navy-light py-24 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-14">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {faqs.map((faq) => (
-              <div key={faq.q} className="bg-navy-light border border-navy-mid rounded-2xl p-7">
+              <div key={faq.q} className="bg-navy border border-navy-mid rounded-2xl p-7">
                 <h3 className="text-white font-semibold text-lg mb-3">{faq.q}</h3>
                 <p className="text-slate-text leading-relaxed">{faq.a}</p>
               </div>

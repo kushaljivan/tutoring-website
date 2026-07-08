@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'SAT Prep | McLean Tutors',
+  title: 'SAT Prep | McLean Tutoring Center',
   description:
     '1-on-1 SAT prep in McLean, VA. Our tutors scored 1550+ and took the SAT in 2024–2025. Starting at $45/hr.',
 }

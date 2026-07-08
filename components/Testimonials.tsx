@@ -22,7 +22,7 @@ const testimonials = [
   {
     id: 3,
     quote:
-      "I got a 5 on the AP Calculus BC exam thanks to McLean Tutors. Couldn't have done it without them.",
+      "I got a 5 on the AP Calculus BC exam thanks to McLean Tutoring Center. Couldn't have done it without them.",
     name: 'Alex K.',
     role: 'Student — Langley HS',
     result: 'AP Calc BC: 5',

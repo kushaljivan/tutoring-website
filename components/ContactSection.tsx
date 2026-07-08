@@ -9,7 +9,7 @@ export default function ContactSection() {
         </h2>
         <p className="text-slate-text text-center mb-10">
           Have a question? Fill out the form and we'll get back to you
-          within 24 hours.
+          within 12 hours.
         </p>
         <ContactForm />
       </div>

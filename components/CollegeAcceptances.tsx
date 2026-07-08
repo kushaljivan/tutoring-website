@@ -16,7 +16,7 @@ export default function CollegeAcceptances() {
               Where Our Students Go
             </h2>
             <p className="text-blue-300 text-sm mb-6">
-              50+ college acceptances since 2020
+              25+ college acceptances since 2020
             </p>
             <div className="flex flex-wrap gap-2">
               {schools.map((school) => (

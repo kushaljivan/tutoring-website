@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation'
 const tabs = [
   { href: '/', label: 'Home' },
   { href: '/sat-prep', label: 'SAT Prep' },
-  { href: '/math-prep', label: 'Math Tutoring' },
-  { href: '/why-us', label: 'Why McLean Tutors?' },
+  { href: '/math-prep', label: 'Math/English Tutoring' },
+  { href: '/why-us', label: 'Why McLean Tutoring Center?' },
 ]
 
 export default function Nav() {
@@ -19,7 +19,7 @@ export default function Nav() {
         {/* Top row: brand + CTA */}
         <div className="h-14 flex items-center justify-between">
           <Link href="/" className="text-white font-bold text-xl shrink-0">
-            McLean Tutors
+            McLean Tutoring Center
           </Link>
           <div className="flex items-center gap-3 md:gap-4">
             <a
