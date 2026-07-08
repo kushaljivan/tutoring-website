@@ -41,21 +41,21 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="bg-navy-light py-24 px-6 scroll-mt-24">
+    <section id="testimonials" className="bg-cream py-24 px-6 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-white text-center mb-12">
+        <h2 className="font-serif text-3xl font-bold text-ink text-center mb-12">
           What Students &amp; Parents Say
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="bg-navy border border-navy-mid rounded-2xl p-8"
+              className="bg-card border border-ink/10 rounded-2xl p-8 shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
             >
-              <p className="text-slate-text text-lg leading-relaxed italic mb-6">
+              <p className="text-ink-light text-lg leading-relaxed italic mb-6">
                 &ldquo;{t.quote}&rdquo;
               </p>
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-3 flex-wrap">
                 <div className="flex items-center gap-3">
                   <Image
                     src={t.photo}
@@ -65,11 +65,11 @@ export default function Testimonials() {
                     className="rounded-full object-cover w-11 h-11"
                   />
                   <div>
-                    <div className="text-white font-semibold">{t.name}</div>
-                    <div className="text-slate-muted text-sm">{t.role}</div>
+                    <div className="text-ink font-semibold">{t.name}</div>
+                    <div className="text-ink-light/70 text-sm">{t.role}</div>
                   </div>
                 </div>
-                <div className="bg-accent/10 border border-accent/30 text-accent text-xs font-semibold px-3 py-1 rounded-full">
+                <div className="bg-amber/10 border border-amber/30 text-amber-dark text-xs font-semibold px-3 py-1 rounded-full">
                   {t.result}
                 </div>
               </div>
