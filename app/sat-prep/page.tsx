@@ -58,7 +58,7 @@ const results = [
 export default function SatPrepPage() {
   return (
     <>
-      <div className="h-[92px]" />
+      <div className="h-[84px] md:h-[92px]" />
       <TrustBar />
 
       {/* Hero */}

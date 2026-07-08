@@ -11,8 +11,8 @@ import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <>
-      {/* spacer for fixed nav (56px top row + 36px tabs = 92px) */}
-      <div className="h-[92px]" />
+      {/* spacer for fixed nav: mobile 48+36=84px, desktop 56+36=92px */}
+      <div className="h-[84px] md:h-[92px]" />
       <TrustBar />
       <main>
         <Hero />

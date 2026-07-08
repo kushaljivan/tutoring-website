@@ -55,7 +55,7 @@ const steps = [
 export default function MathPrepPage() {
   return (
     <>
-      <div className="h-[92px]" />
+      <div className="h-[84px] md:h-[92px]" />
       <TrustBar />
 
       {/* Hero */}
