@@ -14,13 +14,4 @@
   --shadow-card: 0 2px 12px rgb(30 58 95 / 0.08);
   --shadow-card-hover: 0 10px 28px rgb(30 58 95 / 0.14);
   --font-serif: var(--font-lora), Georgia, serif;
-
-  /* LEGACY dark tokens — deleted in the final cleanup task once no component references them */
-  --color-navy: #0f172a;
-  --color-navy-light: #1e293b;
-  --color-navy-mid: #334155;
-  --color-accent: #38bdf8;
-  --color-accent-dark: #0284c7;
-  --color-slate-text: #cbd5e1;
-  --color-slate-muted: #94a3b8;
 }
