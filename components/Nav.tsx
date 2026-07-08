@@ -17,17 +17,24 @@ export default function Nav() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-ink/10">
+      {/* Corner logo: lives in the gutter left of the centered content on wide screens */}
+      <Link
+        href="/"
+        className="hidden xl:flex absolute left-3 inset-y-0 items-center"
+        aria-label="McLean Tutoring Center home"
+      >
+        <Image
+          src="/logo.png"
+          alt=""
+          width={76}
+          height={72}
+          className="w-[76px] h-[72px] object-contain"
+        />
+      </Link>
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Top row: brand + CTA */}
         <div className="h-12 md:h-14 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 text-ink font-serif font-bold text-lg md:text-xl shrink-0">
-            <Image
-              src="/logo.png"
-              alt=""
-              width={40}
-              height={36}
-              className="w-9 h-8 md:w-10 md:h-9 object-contain"
-            />
+          <Link href="/" className="text-ink font-serif font-bold text-lg md:text-xl shrink-0">
             McLean Tutoring Center
           </Link>
           <div className="flex items-center gap-3 md:gap-4">
