@@ -20,7 +20,7 @@ export default function Nav() {
       {/* Corner logo: lives in the gutter left of the centered content on wide screens */}
       <Link
         href="/"
-        className="hidden xl:flex absolute left-3 inset-y-0 items-center"
+        className="hidden xl:flex absolute left-0 inset-y-0 w-[calc((100%-72rem)/2+1.5rem)] items-center justify-center"
         aria-label="McLean Tutoring Center home"
       >
         <Image
