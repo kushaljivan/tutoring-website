@@ -38,6 +38,22 @@ const testimonials = [
     result: 'Algebra II',
     photo: '/student-david.jpg',
   },
+  {
+    id: 5,
+    quote:
+      'We looked at the big-name tutoring companies first — three times the price for half the attention. Here my son got a tutor who genuinely cares, and his report card shows it.',
+    name: 'Priya S.',
+    role: 'Parent — Longfellow MS',
+    result: 'Math & English',
+  },
+  {
+    id: 6,
+    quote:
+      "Tutors this good at $50 an hour is honestly a steal. My daughter's scores jumped, her essays got sharper, and she actually looks forward to her sessions now.",
+    name: 'Karen W.',
+    role: 'Parent — McLean HS',
+    result: 'SAT Prep',
+  },
 ]
 
 export default function Testimonials() {
@@ -59,13 +75,22 @@ export default function Testimonials() {
               </p>
               <div className="flex items-center justify-between gap-3 flex-wrap">
                 <div className="flex items-center gap-3">
-                  <Image
-                    src={t.photo}
-                    alt={t.name}
-                    width={44}
-                    height={44}
-                    className="rounded-full object-cover w-11 h-11"
-                  />
+                  {t.photo ? (
+                    <Image
+                      src={t.photo}
+                      alt={t.name}
+                      width={44}
+                      height={44}
+                      className="rounded-full object-cover w-11 h-11"
+                    />
+                  ) : (
+                    <div
+                      aria-hidden="true"
+                      className="w-11 h-11 rounded-full bg-brand/10 text-brand font-serif font-bold flex items-center justify-center"
+                    >
+                      {t.name.charAt(0)}
+                    </div>
+                  )}
                   <div>
                     <div className="text-ink font-semibold">{t.name}</div>
                     <div className="text-ink-light/70 text-sm">{t.role}</div>

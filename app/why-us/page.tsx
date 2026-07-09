@@ -55,7 +55,7 @@ const whoWeHelp = [
     grade: 'SAT / ACT Prep',
     Icon: TrendingUpIcon,
     subjects: ['SAT Math & Reading/Writing', 'ACT all sections', 'Score strategy', 'Full practice tests'],
-    desc: 'Our tutors scored 1550+ on the SAT in 2024–2025. We know the current test — not a version from years ago.',
+    desc: 'Our tutors took the SAT and ACT in 2024–2026 and scored in the 99th percentile. We know the current tests — not a version from years ago.',
   },
 ]
 
@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     q: 'How are your tutors qualified if they\'re in high school?',
-    a: 'Our tutors recently attended the same FCPS schools your student is in — they know the curriculum, the teachers, and what gets tested. For SAT prep, they scored 1550+ (99th percentile) on the 2024–2025 test. That combination of recent experience and local knowledge is hard to find anywhere else.',
+    a: 'Our tutors recently attended the same FCPS schools your student is in — they know the curriculum, the teachers, and what gets tested. For test prep, they took the SAT and ACT in 2024–2026 and scored in the 99th percentile. That combination of recent experience and local knowledge is hard to find anywhere else.',
   },
   {
     q: 'Do you have a minimum number of sessions?',

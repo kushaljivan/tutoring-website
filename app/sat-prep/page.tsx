@@ -9,7 +9,7 @@ import { CalculatorIllustration, BookIllustration } from '@/components/illustrat
 export const metadata: Metadata = {
   title: 'SAT & ACT Prep | McLean Tutoring Center',
   description:
-    '1-on-1 SAT and ACT prep in McLean, VA. Our tutors scored 1550+ and took these tests in 2024–2025. Starting at $50/hr.',
+    '1-on-1 SAT and ACT prep in McLean, VA. Our tutors took these tests in 2024–2026 and scored in the 99th percentile. Starting at $50/hr.',
 }
 
 const steps = [
@@ -81,14 +81,14 @@ export default function SatPrepPage() {
           <div className="max-w-4xl text-center">
           <span className="text-brand text-sm font-semibold uppercase tracking-widest">SAT & ACT Prep · McLean, VA</span>
           <h1 className="font-serif mt-3 text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight">
-            Score 200+ Points Higher.<br />
+            Score Higher.<br />
             <span className="text-brand">We Know Exactly How.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-ink-light max-w-2xl mx-auto leading-relaxed">
             We prep for <strong className="text-ink">both the SAT and the ACT</strong>. Our
-            tutors took these tests in 2024–2025 and scored{' '}
-            <strong className="text-ink">1550+</strong> — we teach the current tests, with
-            the exact strategies, patterns, and shortcuts that work right now.
+            tutors took these tests in 2024–2026 and scored in the{' '}
+            <strong className="text-ink">99th percentile</strong> — we teach the current
+            tests, with the exact strategies, patterns, and shortcuts that work right now.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="/#book" className="bg-brand text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-brand-dark transition-colors">
