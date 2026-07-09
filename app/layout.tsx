@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mcleantutoringcenter.com'),
   title: 'McLean Tutoring Center — Tutoring, Test Prep, & College Admissions',
   description:
-    'Affordable 1-on-1 tutoring in Math, English, Science, and History — plus SAT/ACT prep and college admissions coaching for K-12 students in McLean, VA. Free 30 min consultation.',
+    'Affordable 1-on-1 tutoring in every school subject, plus SAT/ACT prep and college admissions coaching for K-12 students in McLean, VA. Free 30 min consultation.',
   openGraph: {
     siteName: 'McLean Tutoring Center',
     title: 'McLean Tutoring Center — Tutoring, Test Prep, & College Admissions',
     description:
-      'Affordable 1-on-1 tutoring in Math, English, Science, and History — plus SAT/ACT prep and college admissions coaching for K-12 students in McLean, VA.',
+      'Affordable 1-on-1 tutoring in every school subject, plus SAT/ACT prep and college admissions coaching for K-12 students in McLean, VA.',
     url: 'https://mcleantutoringcenter.com',
     type: 'website',
   },
