@@ -3,6 +3,14 @@ import { NotebookIllustration } from '@/components/illustrations'
 
 const testimonials = [
   {
+    id: 5,
+    quote:
+      'We looked at the big-name tutoring companies first — three times the price for half the attention. Here my son got a tutor who genuinely cares, and his report card shows it.',
+    name: 'Priya S.',
+    role: 'Parent — Longfellow MS',
+    result: 'Math & English',
+  },
+  {
     id: 1,
     quote:
       'My tutor helped me go from a 1180 to a 1430 on the SAT in just 8 weeks. The method is systematic and actually works.',
@@ -37,14 +45,6 @@ const testimonials = [
     role: 'Parent — Cooper MS',
     result: 'Algebra II',
     photo: '/student-david.jpg',
-  },
-  {
-    id: 5,
-    quote:
-      'We looked at the big-name tutoring companies first — three times the price for half the attention. Here my son got a tutor who genuinely cares, and his report card shows it.',
-    name: 'Priya S.',
-    role: 'Parent — Longfellow MS',
-    result: 'Math & English',
   },
   {
     id: 6,
