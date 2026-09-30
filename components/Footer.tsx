@@ -9,6 +9,11 @@ export default function Footer() {
           <p className="text-white/50 text-xs mt-1">
             Serving McLean, Tysons, Great Falls &amp; Vienna, VA
           </p>
+          <p className="text-white/50 text-xs mt-1 max-w-xl">
+            In-person sessions are held at public libraries around the DMV. McLean Tutoring
+            Center is an independent business and is not affiliated with, sponsored by, or
+            endorsed by any public library or library system.
+          </p>
         </div>
         <a
           href="mailto:mcleantutors21@gmail.com"

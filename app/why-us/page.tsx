@@ -78,7 +78,7 @@ const faqs = [
   },
   {
     q: 'Where do sessions take place?',
-    a: 'We tutor in-person throughout McLean, Tysons, Great Falls, and Vienna — at a library, coffee shop, or other public setting. Online sessions are also available.',
+    a: 'In-person sessions are held at public libraries around the DMV — typically a library close to your home in McLean, Tysons, Great Falls, Vienna, or nearby. Online sessions are also available. McLean Tutoring Center is an independent business and is not affiliated with, sponsored by, or endorsed by any public library or library system.',
   },
   {
     q: 'How much improvement can I expect?',
@@ -246,7 +246,7 @@ export default function WhyUsPage() {
                 'Free 30-min consultation',
                 'No minimum sessions',
                 'Cancel anytime',
-                'In-person or online',
+                'In-person at DMV public libraries, or online',
                 'All subjects — Math, English & more',
                 'McLean & surrounding areas',
               ].map((item) => (

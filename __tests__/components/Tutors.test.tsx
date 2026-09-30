@@ -19,4 +19,14 @@ describe('Tutors', () => {
     ).toBeInTheDocument()
     expect(screen.getByText(/math · cs · reading & writing · sat/i)).toBeInTheDocument()
   })
+
+  it('lists the founder first and the new tutors after', () => {
+    render(<Tutors />)
+    const names = screen
+      .getAllByRole('heading', { level: 3 })
+      .map((h) => h.textContent)
+    expect(names).toEqual(['Kushal Jivan', 'Henock', 'Vanika', 'Shanmukha'])
+    expect(screen.getAllByText('Founder')).toHaveLength(1)
+    expect(screen.getAllByText('Tutor')).toHaveLength(3)
+  })
 })
