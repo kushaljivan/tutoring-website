@@ -49,6 +49,14 @@ const tutors: {
     bio: "Hi, I'm Shanmukha! I'm a senior at McLean High School, and math has always been my favorite subject — nothing beats working through a tough problem and watching it all come together. I walk through problems step by step and explain the reasoning behind each move, so students can solve the next one on their own.",
     avatar: { skin: '#8D5A36', hair: 'fluffy', shirt: '#0D9488' },
   },
+  {
+    name: 'Yimin',
+    role: 'Tutor',
+    school: 'McLean High School · Senior',
+    specialty: 'Biology · Math',
+    bio: "Hi, I'm Yimin! I'm a senior at McLean High School, and biology and math are my two favorite subjects — I love how one explains the living world and the other gives you the tools to make sense of it. When I tutor, I focus on real understanding over memorization, with plenty of practice so students walk into every test feeling prepared.",
+    avatar: { skin: '#F3D2B3', hair: 'short', shirt: '#7C3AED' },
+  },
 ]
 
 const HAIR_COLOR = '#2F2013'
@@ -133,11 +141,11 @@ export default function Tutors() {
           Real students who just took the same classes and the same tests —
           and know exactly how to help.
         </p>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-md sm:max-w-none mx-auto">
+        <div className="flex flex-wrap justify-center gap-6">
           {tutors.map((t) => (
             <div
               key={t.name}
-              className="bg-card border border-ink/10 rounded-2xl p-6 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
+              className="w-full max-w-md sm:max-w-none sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-card border border-ink/10 rounded-2xl p-6 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
             >
               <div className="mx-auto mb-4 w-20 h-20 rounded-full border border-amber/30 overflow-hidden">
                 <FriendlyAvatar {...t.avatar} />

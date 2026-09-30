@@ -25,8 +25,8 @@ describe('Tutors', () => {
     const names = screen
       .getAllByRole('heading', { level: 3 })
       .map((h) => h.textContent)
-    expect(names).toEqual(['Kushal Jivan', 'Henock', 'Vanika', 'Shanmukha'])
+    expect(names).toEqual(['Kushal Jivan', 'Henock', 'Vanika', 'Shanmukha', 'Yimin'])
     expect(screen.getAllByText('Founder')).toHaveLength(1)
-    expect(screen.getAllByText('Tutor')).toHaveLength(3)
+    expect(screen.getAllByText('Tutor')).toHaveLength(4)
   })
 })
