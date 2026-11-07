@@ -22,7 +22,7 @@ const tutors: {
     role: 'Founder',
     school: 'Virginia Tech · Applied Math & Computer Science',
     specialty: 'Math · CS · Reading & Writing · SAT',
-    bio: "Hey, I'm Kushal! I'm heading to Virginia Tech to study Applied Math and Computer Science. I tutor math, computer science, reading, and English writing — plus SAT prep — and I love the moment a tricky concept finally clicks. Sessions with me are relaxed, encouraging, and focused on building real confidence.",
+    bio: "Hey, I'm Kushal! I founded McLean Tutoring Center and I study Applied Math and Computer Science at Virginia Tech. I tutor math, computer science, reading, writing, and SAT prep. My favorite part of tutoring is seeing a tricky concept finally click, and I keep sessions relaxed so students feel comfortable asking anything.",
     avatar: { skin: '#9C6644', hair: 'short', shirt: '#2563EB' },
   },
   {
@@ -38,7 +38,7 @@ const tutors: {
     role: 'Tutor',
     school: 'McLean High School · Junior',
     specialty: 'Science',
-    bio: "Hi, I'm Vanika! I'm a junior at McLean High School, and science is my favorite subject — I love figuring out how and why things work, from chemical reactions to the human body. When I tutor, I break big concepts into simple steps and connect them to real life so they actually make sense.",
+    bio: "Hi, I'm Vanika! I'm a junior at McLean High School and science has always been my favorite subject. I love learning how things work, whether it's chemical reactions or the human body. When I tutor, I like breaking big ideas into small steps and connecting them to real life so they actually make sense.",
     avatar: { skin: '#A0673F', hair: 'long', shirt: '#F59E0B' },
   },
   {
@@ -46,7 +46,7 @@ const tutors: {
     role: 'Tutor',
     school: 'McLean High School · Senior',
     specialty: 'Math',
-    bio: "Hi, I'm Shanmukha! I'm a senior at McLean High School, and math has always been my favorite subject — nothing beats working through a tough problem and watching it all come together. I walk through problems step by step and explain the reasoning behind each move, so students can solve the next one on their own.",
+    bio: "Hey, I'm Shanmukha! I'm a senior at McLean High School and math is my favorite subject. I love working through a hard problem until everything comes together. When I tutor, I go step by step and explain the why behind each move so students can solve the next one on their own.",
     avatar: { skin: '#8D5A36', hair: 'fluffy', shirt: '#0D9488' },
   },
   {
@@ -54,8 +54,32 @@ const tutors: {
     role: 'Tutor',
     school: 'McLean High School · Senior',
     specialty: 'Biology · Math',
-    bio: "Hi, I'm Yimin! I'm a senior at McLean High School, and biology and math are my two favorite subjects — I love how one explains the living world and the other gives you the tools to make sense of it. When I tutor, I focus on real understanding over memorization, with plenty of practice so students walk into every test feeling prepared.",
+    bio: "Hi, I'm Yimin! I'm a senior at McLean High School and my favorite subjects are biology and math. I like how the two connect, and I love helping students see that too. My goal when tutoring is to help students actually understand the material instead of just memorizing it, so they feel ready for any test.",
     avatar: { skin: '#F3D2B3', hair: 'short', shirt: '#7C3AED' },
+  },
+  {
+    name: 'Esther',
+    role: 'Tutor',
+    school: 'McLean High School · Senior',
+    specialty: 'Science',
+    bio: "Hi, I'm Esther! I'm a senior at McLean High School and I've loved science for as long as I can remember. Biology, chemistry, physics, I enjoy all of it because there's always something new to learn. When I tutor, I try to make science feel less intimidating and a lot more fun.",
+    avatar: { skin: '#EFC9A4', hair: 'long', shirt: '#DB2777' },
+  },
+  {
+    name: 'Anar',
+    role: 'Tutor',
+    school: 'McLean High School · Senior',
+    specialty: 'Physics · STEM',
+    bio: "Hey, I'm Anar! I'm a senior at McLean High School and physics is my favorite subject. I'm really into STEM and love seeing how math explains the way things move and work in the real world. When I tutor, I focus on building strong problem solving skills that carry over to any STEM class.",
+    avatar: { skin: '#9A6240', hair: 'short', shirt: '#0EA5E9' },
+  },
+  {
+    name: 'Michelle',
+    role: 'Tutor',
+    school: 'McLean High School · Junior',
+    specialty: 'Elementary & Middle School',
+    bio: "Hi, I'm Michelle! I'm a junior at McLean High School and I love working with kids. I've always enjoyed helping younger students and seeing them get excited when they figure something out. My goal when tutoring is to make learning fun and help every student feel confident in themselves.",
+    avatar: { skin: '#F5D5B8', hair: 'long', shirt: '#16A34A' },
   },
 ]
 
@@ -138,14 +162,14 @@ export default function Tutors() {
           Meet Our Tutors
         </h2>
         <p className="text-ink-light text-center mb-8 max-w-xl mx-auto">
-          Real students who just took the same classes and the same tests —
+          Real students who just took the same classes and the same tests,
           and know exactly how to help.
         </p>
         <div className="flex flex-wrap justify-center gap-6">
           {tutors.map((t) => (
             <div
               key={t.name}
-              className="w-full max-w-md sm:max-w-none sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-card border border-ink/10 rounded-2xl p-6 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
+              className="w-full max-w-md sm:max-w-none sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-1.125rem)] bg-card border border-ink/10 rounded-2xl p-6 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
             >
               <div className="mx-auto mb-4 w-20 h-20 rounded-full border border-amber/30 overflow-hidden">
                 <FriendlyAvatar {...t.avatar} />

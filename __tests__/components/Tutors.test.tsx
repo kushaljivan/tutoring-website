@@ -25,8 +25,15 @@ describe('Tutors', () => {
     const names = screen
       .getAllByRole('heading', { level: 3 })
       .map((h) => h.textContent)
-    expect(names).toEqual(['Kushal Jivan', 'Henock', 'Vanika', 'Shanmukha', 'Yimin'])
+    expect(names).toEqual(['Kushal Jivan', 'Henock', 'Vanika', 'Shanmukha', 'Yimin', 'Esther', 'Anar', 'Michelle'])
     expect(screen.getAllByText('Founder')).toHaveLength(1)
-    expect(screen.getAllByText('Tutor')).toHaveLength(4)
+    expect(screen.getAllByText('Tutor')).toHaveLength(7)
+  })
+
+  it('keeps tutor bios free of em dashes', () => {
+    const { container } = render(<Tutors />)
+    container.querySelectorAll('h3 ~ p').forEach((p) => {
+      expect(p.textContent).not.toContain('\u2014')
+    })
   })
 })
