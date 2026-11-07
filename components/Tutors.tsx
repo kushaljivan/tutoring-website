@@ -1,5 +1,5 @@
 import { BookIllustration } from '@/components/illustrations'
-import { FallLeaf, LeafCluster } from '@/components/fall'
+import { FallLeaf, FallScatter } from '@/components/fall'
 
 type HairStyle = 'short' | 'fluffy' | 'long' | 'frizzy'
 
@@ -164,8 +164,9 @@ function FriendlyAvatar({ skin, hair, shirt, scarf }: Avatar) {
 
 export default function Tutors() {
   return (
-    <section id="tutors" className="bg-cream py-16 px-6 scroll-mt-24">
-      <div className="max-w-6xl mx-auto">
+    <section id="tutors" className="relative bg-cream py-16 px-6 scroll-mt-24">
+      <FallScatter seed={11} />
+      <div className="relative z-10 max-w-6xl mx-auto">
         <div className="relative w-16 h-16 mx-auto mb-4">
           <BookIllustration className="w-16 h-16" />
           <FallLeaf className="seasonal absolute -right-3 -bottom-1 w-8 h-6" />
@@ -181,9 +182,8 @@ export default function Tutors() {
           {tutors.map((t) => (
             <div
               key={t.name}
-              className="relative w-full max-w-md sm:max-w-none sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-1.125rem)] bg-card border border-ink/10 rounded-2xl p-6 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
+              className="w-full max-w-md sm:max-w-none sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-1.125rem)] bg-card border border-ink/10 rounded-2xl p-6 text-center shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
             >
-              <LeafCluster className="seasonal absolute top-2 right-2 w-12 h-12 pointer-events-none" />
               <div className="mx-auto mb-4 w-20 h-20 rounded-full border border-amber/30 overflow-hidden">
                 <FriendlyAvatar {...t.avatar} />
               </div>

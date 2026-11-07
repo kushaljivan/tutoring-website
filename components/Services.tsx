@@ -1,6 +1,6 @@
 import { CalculatorIcon, BookOpenIcon, RulerIcon, FlaskIcon, CodeIcon } from '@/components/icons'
 import { CalculatorIllustration } from '@/components/illustrations'
-import { LeafCluster, Pumpkin } from '@/components/fall'
+import { FallScatter, Pumpkin } from '@/components/fall'
 
 const services = [
   {
@@ -42,8 +42,9 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-cream-dark py-16 px-6 scroll-mt-24">
-      <div className="max-w-6xl mx-auto">
+    <section id="services" className="relative bg-cream-dark py-16 px-6 scroll-mt-24">
+      <FallScatter seed={29} />
+      <div className="relative z-10 max-w-6xl mx-auto">
         <div className="relative w-16 h-16 mx-auto mb-4">
           <CalculatorIllustration className="w-16 h-16" />
           <Pumpkin className="seasonal absolute -right-5 bottom-0 w-8 h-8" />
@@ -55,9 +56,8 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="relative w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-card border border-ink/10 rounded-2xl p-8 flex flex-col shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
+              className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-card border border-ink/10 rounded-2xl p-8 flex flex-col shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
             >
-              <LeafCluster className="seasonal absolute top-2 right-2 w-12 h-12 pointer-events-none" />
               <div className="w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center mb-4">
                 <service.Icon className="w-6 h-6" />
               </div>
