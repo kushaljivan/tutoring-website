@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { HarvestRow, Pumpkin } from '@/components/fall'
 
 const tabs = [
   { href: '/', label: 'Home' },
@@ -37,7 +36,6 @@ export default function Nav() {
         <div className="h-12 md:h-14 flex items-center justify-between">
           <Link href="/" className="text-ink font-serif font-bold text-lg md:text-xl shrink-0">
             McLean Tutoring Center
-            <Pumpkin className="seasonal inline-block w-6 h-6 md:w-7 md:h-7 ml-1.5 -mt-1.5 align-middle" />
           </Link>
           <div className="flex items-center gap-3 md:gap-4">
             <a
@@ -72,7 +70,6 @@ export default function Nav() {
               {tab.label}
             </Link>
           ))}
-          <HarvestRow className="seasonal hidden md:block ml-auto h-8 w-[140px] shrink-0" />
         </div>
       </div>
     </nav>

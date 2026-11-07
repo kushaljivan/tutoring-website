@@ -61,24 +61,6 @@ export function Pumpkin({ className }: Props) {
   )
 }
 
-/** A little harvest pile (pumpkins, acorns, leaves) for the nav bar. */
-export function HarvestRow({ className }: Props) {
-  return (
-    <svg viewBox="0 0 160 40" aria-hidden="true" className={className}>
-      <Leaf color={OLIVE} transform="translate(2 30) rotate(-25) scale(.8)" />
-      <PumpkinShape transform="translate(14 3) scale(1.08)" />
-      <Leaf color={RUST} transform="translate(44 36) rotate(-40) scale(.85)" />
-      <Acorn transform="translate(62 31) rotate(20)" />
-      <Leaf color={MUSTARD} transform="translate(68 12) rotate(28) scale(.9)" />
-      <PumpkinShape transform="translate(88 16) scale(.72)" />
-      <Acorn transform="translate(117 32) rotate(-18)" />
-      <Leaf color={CRANBERRY} transform="translate(122 26) rotate(-28) scale(.85)" />
-      <Leaf color={BURNT_ORANGE} transform="translate(141 38) rotate(-78) scale(.7)" />
-      <Acorn transform="translate(152 18) rotate(35) scale(.8)" />
-    </svg>
-  )
-}
-
 // Deterministic pseudo-random numbers, so the server and browser draw the same scatter.
 function seeded(seed: number) {
   return () => {
