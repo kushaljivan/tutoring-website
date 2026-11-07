@@ -22,9 +22,9 @@ export function BookIllustration(props: Props) {
       <rect x="28" y="61" width="16" height="3.5" rx="1.75" fill="#C7D2E3" />
       <rect x="70" y="43" width="22" height="3.5" rx="1.75" fill="#C7D2E3" />
       <rect x="70" y="52" width="22" height="3.5" rx="1.75" fill="#C7D2E3" />
-      <rect x="70" y="61" width="16" height="3.5" rx="1.75" fill="#F59E0B" />
+      <rect x="70" y="61" width="16" height="3.5" rx="1.75" className="fill-amber" />
       {/* bookmark */}
-      <path d="M84 26v18l5-4 5 4V24c-3.5-.4-7-.4-10 2Z" fill="#F59E0B" />
+      <path d="M84 26v18l5-4 5 4V24c-3.5-.4-7-.4-10 2Z" className="fill-amber" />
     </svg>
   )
 }
@@ -40,7 +40,7 @@ export function CalculatorIllustration(props: Props) {
       {/* buttons */}
       <rect x="38" y="54" width="12" height="12" rx="4" fill="#FFFFFF" />
       <rect x="54" y="54" width="12" height="12" rx="4" fill="#FFFFFF" />
-      <rect x="70" y="54" width="12" height="12" rx="4" fill="#F59E0B" />
+      <rect x="70" y="54" width="12" height="12" rx="4" className="fill-amber" />
       <rect x="38" y="70" width="12" height="12" rx="4" fill="#FFFFFF" />
       <rect x="54" y="70" width="12" height="12" rx="4" fill="#FFFFFF" />
       <rect x="70" y="70" width="12" height="12" rx="4" fill="#FFFFFF" />
@@ -60,7 +60,7 @@ export function PencilIllustration(props: Props) {
         {/* ferrule */}
         <rect x="32" y="48" width="8" height="24" fill="#C7D2E3" />
         {/* body */}
-        <rect x="40" y="48" width="46" height="24" fill="#F59E0B" />
+        <rect x="40" y="48" width="46" height="24" className="fill-amber" />
         <rect x="40" y="56" width="46" height="8" fill="#FBBF56" />
         {/* wood tip */}
         <path d="M86 48v24l16-9.5v-5L86 48Z" fill="#F3EEE5" />
@@ -80,7 +80,7 @@ export function EraserIllustration(props: Props) {
         {/* sleeve */}
         <path
           d="M26 54a8 8 0 0 1 8-8h24v30H34a8 8 0 0 1-8-8V54Z"
-          fill="#F59E0B"
+          className="fill-amber"
         />
         <rect x="34" y="54" width="16" height="4" rx="2" fill="#FBBF56" />
         {/* shine */}
@@ -103,7 +103,7 @@ export function NotebookIllustration(props: Props) {
         {/* page */}
         <rect x="28" y="16" width="56" height="78" rx="6" fill="#FFFFFF" />
         {/* margin line */}
-        <rect x="38" y="16" width="2.5" height="78" fill="#F59E0B" />
+        <rect x="38" y="16" width="2.5" height="78" className="fill-amber" />
         {/* writing lines */}
         <rect x="46" y="30" width="30" height="3" rx="1.5" fill="#C7D2E3" />
         <rect x="46" y="40" width="30" height="3" rx="1.5" fill="#C7D2E3" />
@@ -113,13 +113,13 @@ export function NotebookIllustration(props: Props) {
         {/* A+ mark */}
         <path
           d="M62 84l4-9 4 9M63.5 81h5"
-          stroke="#F59E0B"
+          className="stroke-amber"
           strokeWidth="2.5"
           strokeLinecap="round"
           strokeLinejoin="round"
           fill="none"
         />
-        <path d="M74 79.5h6M77 76.5v6" stroke="#F59E0B" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+        <path d="M74 79.5h6M77 76.5v6" className="stroke-amber" strokeWidth="2.5" strokeLinecap="round" fill="none" />
       </g>
     </svg>
   )
@@ -129,7 +129,7 @@ export function RulerIllustration(props: Props) {
   return (
     <svg viewBox="0 0 120 120" aria-hidden="true" {...props}>
       <g transform="rotate(-24 60 60)">
-        <rect x="14" y="50" width="92" height="24" rx="5" fill="#F59E0B" />
+        <rect x="14" y="50" width="92" height="24" rx="5" className="fill-amber" />
         <rect x="14" y="50" width="92" height="7" rx="3.5" fill="#FBBF56" />
         {/* ticks */}
         <rect x="26" y="50" width="2.5" height="12" fill="#1E3A5F" />

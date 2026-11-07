@@ -53,8 +53,16 @@ const structuredData = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    // suppressHydrationWarning: the fall script below adds a class to <html> before React hydrates
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.className} ${lora.variable} bg-cream text-ink`}>
+        {/* Turns on the fall/Thanksgiving theme (components/fall.tsx + html.fall in globals.css)
+            until midnight Eastern on Dec 1, 2026. Runs before the page paints, so no flicker. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if(Date.now()<Date.UTC(2026,11,1,5))document.documentElement.classList.add('fall')`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

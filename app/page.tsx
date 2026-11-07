@@ -7,6 +7,7 @@ import Testimonials from '@/components/Testimonials'
 import BookSession from '@/components/BookSession'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
+import { LeafGarland } from '@/components/fall'
 
 export default function Home() {
   return (
@@ -18,8 +19,10 @@ export default function Home() {
         <Hero />
         <About />
         <Tutors />
+        <LeafGarland id="garland-tutors" className="bg-cream" />
         <Services />
         <Testimonials />
+        <LeafGarland id="garland-testimonials" className="bg-cream" />
         <BookSession />
         <ContactSection />
       </main>
