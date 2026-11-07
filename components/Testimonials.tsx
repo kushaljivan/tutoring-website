@@ -60,7 +60,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="bg-cream py-16 px-6 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
-        <NotebookIllustration className="w-16 h-16 mx-auto mb-4" />
+        <NotebookIllustration className="w-32 h-32 mx-auto mb-2" />
         <h2 className="font-serif text-3xl font-bold text-ink text-center mb-12">
           What Students &amp; Parents Say
         </h2>
