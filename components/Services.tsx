@@ -1,34 +1,41 @@
-import { CalculatorIcon, BookOpenIcon, RulerIcon, FlaskIcon } from '@/components/icons'
+import { CalculatorIcon, BookOpenIcon, RulerIcon, FlaskIcon, CodeIcon } from '@/components/icons'
 import { CalculatorIllustration } from '@/components/illustrations'
 
 const services = [
   {
-    id: 'sat-math',
+    id: 'sat-act',
     Icon: CalculatorIcon,
-    title: 'SAT Math',
+    title: 'SAT/ACT',
     description:
-      'Score improvement strategies, test-taking techniques, and full practice test review. Familiar with the curriculum at Langley and McLean HS. Target: 700+ on the Math section.',
+      'Prep for every section of the SAT and ACT, from math to reading and writing to ACT science. We work on strategy, timing, and full practice test review so students walk in ready on test day.',
   },
   {
     id: 'english-tutoring',
     Icon: BookOpenIcon,
     title: 'English Tutoring',
     description:
-      'Reading comprehension, grammar, essay writing, and vocabulary — for elementary through high school students. Also covers SAT English and EBRW prep.',
+      'Reading comprehension, grammar, essay writing, and vocabulary, for elementary through high school students. Also covers SAT English and EBRW prep.',
   },
   {
     id: 'math-tutoring',
     Icon: RulerIcon,
     title: 'Math Tutoring',
     description:
-      'Elementary math through Calculus BC — concept mastery, homework help, and exam prep. We tutor students at Cooper MS, Longfellow MS, Langley HS, and McLean HS.',
+      'Elementary math through Calculus BC. Concept mastery, homework help, and exam prep. We tutor students at Cooper MS, Longfellow MS, Langley HS, and McLean HS.',
   },
   {
     id: 'science-history',
     Icon: FlaskIcon,
     title: 'Science & History',
     description:
-      'Biology, Chemistry, Physics, US and World History — including AP courses. Concept review, essay and lab report help, and exam prep for every class.',
+      'Biology, Chemistry, Physics, US and World History, including AP courses. Concept review, essay and lab report help, and exam prep for every class.',
+  },
+  {
+    id: 'stem-topics',
+    Icon: CodeIcon,
+    title: 'STEM Topics',
+    description:
+      'Help with the more niche STEM classes, like AP Computer Science A, coding in Java or Python, and AP Statistics. Great for students in a class most tutors don\'t cover or anyone who wants to get ahead.',
   },
 ]
 
@@ -40,11 +47,11 @@ export default function Services() {
         <h2 className="font-serif text-3xl font-bold text-ink text-center mb-12">
           What We Teach
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-card border border-ink/10 rounded-2xl p-8 flex flex-col shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
+              className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] bg-card border border-ink/10 rounded-2xl p-8 flex flex-col shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover"
             >
               <div className="w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center mb-4">
                 <service.Icon className="w-6 h-6" />
